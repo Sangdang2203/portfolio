@@ -50,14 +50,7 @@ export default function HeaderComponent() {
   return (
     <div className={`my-10 w-full flex justify-between items-center`}>
       <div className="flex justify-start items-center">
-        <Button
-          id="fade-button"
-          aria-controls={open ? "fade-menu" : undefined}
-          aria-haspopup="true"
-          aria-expanded={open ? "true" : undefined}
-          onClick={handleClick}
-          className="text-2xl button"
-        >
+        <Button className="text-2xl button">
           <span className="text-2xl">&nbsp;portfolio&nbsp;</span>
           <span aria-hidden="true" className="hover-text">
             &nbsp;portfolio&nbsp;
