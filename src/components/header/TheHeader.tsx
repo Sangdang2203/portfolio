@@ -66,8 +66,8 @@ export default function HeaderComponent() {
       </div>
 
       <div>
-        <Button onClick={handleClick} className="text-2xl button">
-          <MenuSharp fontSize="large" color="primary" className="md:hidden" />
+        <Button onClick={handleClick} className="text-2xl button md:hidden">
+          <MenuSharp fontSize="large" color="primary" />
         </Button>
         <Popover
           id="fade-menu"
@@ -91,7 +91,12 @@ export default function HeaderComponent() {
             bgcolor="background.paper"
           >
             {links.map((link) => (
-              <Link key={link.key} href={link.href} className="capitalize p-2">
+              <Link
+                key={link.key}
+                href={link.href}
+                className="capitalize p-2"
+                onClick={handleClose}
+              >
                 {link.label}
               </Link>
             ))}
