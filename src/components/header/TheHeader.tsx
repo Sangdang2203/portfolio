@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { WbSunny, Nightlight } from "@mui/icons-material";
 import Link from "next/link";
 import {
   Button,
@@ -105,28 +104,6 @@ export default function HeaderComponent() {
           })}
         </Menu>
       </div>
-
-      <FormControlLabel
-        className="hidden "
-        control={
-          <Switch
-            size="small"
-            checked={theme === "dark"}
-            onChange={changeTheme}
-          />
-        }
-        label={
-          theme === "light" ? (
-            <Tooltip title="Light mode">
-              <WbSunny fontSize="small" className="ml-2" />
-            </Tooltip>
-          ) : (
-            <Tooltip title="Dark mode">
-              <Nightlight fontSize="small" className="ml-2" />
-            </Tooltip>
-          )
-        }
-      />
     </div>
   );
 }
