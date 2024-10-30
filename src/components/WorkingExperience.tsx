@@ -1,7 +1,7 @@
 "use client";
 
 import { experienceData } from "@/assets/libs/data";
-import { Box, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Divider, Tab, Tabs, Typography } from "@mui/material";
 import {
   Business,
   CalendarMonth,
@@ -9,35 +9,7 @@ import {
   LocationOn,
 } from "@mui/icons-material";
 import React from "react";
-
-interface TabPanelProps {
-  children?: React.ReactNode;
-  index: number;
-  value: number;
-}
-
-function CustomTabPanel(props: TabPanelProps) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
-    </div>
-  );
-}
-
-function a11yProps(index: number) {
-  return {
-    id: `simple-tab-${index}`,
-    "aria-controls": `simple-tabpanel-${index}`,
-  };
-}
+import { a11yProps, CustomTabPanel } from "@/components/CustomTabPanel";
 
 export default function WorkingExperienceComponent() {
   const [currentTab, setCurrentTab] = React.useState(0);
@@ -46,6 +18,9 @@ export default function WorkingExperienceComponent() {
   };
   return (
     <>
+      <button className="button" data-text="Experience">
+        <span className="actual-text">&nbsp;experience&nbsp;</span>
+      </button>
       <Box>
         <Tabs
           sx={{ color: "white" }}
@@ -72,15 +47,15 @@ export default function WorkingExperienceComponent() {
             <Box key={index} sx={{ mt: 3 }}>
               <CustomTabPanel value={currentTab} index={index}>
                 <div className="flex my-2 items-start">
-                  <Business fontSize="medium" className="mr-2" />
+                  <Business fontSize="small" className="mr-2" />
                   <Typography variant="body1">{item.company}</Typography>
                 </div>
                 <div className="flex my-2 items-start">
-                  <CalendarMonth fontSize="medium" className="mr-2" />
+                  <CalendarMonth fontSize="small" className="mr-2" />
                   <Typography variant="body2">{item.duration}</Typography>
                 </div>
                 <div className="flex my-2 items-start">
-                  <LocationOn fontSize="medium" className="mr-2" />
+                  <LocationOn fontSize="small" className="mr-2" />
                   <Typography variant="body2">{item.address}</Typography>
                 </div>
                 <Typography variant="body2">{item.describe}</Typography>

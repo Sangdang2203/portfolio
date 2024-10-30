@@ -55,6 +55,20 @@ export default function IntroComponent() {
             like team leader or project manager to contribute to the
             company&apos;s success.
           </Typography>
+          <div className="mt-3">
+            <Typography variant="body1" className="capitalize">
+              strengths
+            </Typography>
+            <hr className="max-w-[70px]" />
+            <Typography>
+              Communication Skill - Build relationships, resolve conflicts and
+              work effectively in teams.
+            </Typography>
+            <Typography>
+              Analytical and ProblemSolving Skills - Used problem-solving skills
+              to debug and enhance applications.
+            </Typography>
+          </div>
         </div>
       )}
     </>

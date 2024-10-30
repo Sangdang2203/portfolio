@@ -1,3 +1,6 @@
+import { describe } from "node:test";
+import { title } from "process";
+
 export const experienceData = [
   {
     id: 1,
@@ -50,6 +53,7 @@ export const projectData = [
     id: 1,
     title: "eSavior",
     duration: "09/2024 - 10/2024",
+    teamSize: 5,
     describe:
       "eSavior is a mobile application that addresses pressing issues in ambulance booking, emergency medical service delivery and home care services",
     githubLinks: [],
@@ -86,6 +90,7 @@ export const projectData = [
     id: 2,
     title: "TARS Delivery System",
     duration: "01/2024 - 03/2024",
+    teamSize: 5,
     describe: "",
     githubLinks: [
       { id: 1, name: "Frontend", link: "https://tinyurl.com/frontend-tars" },
@@ -123,8 +128,52 @@ export const projectData = [
       {
         id: 5,
         describe:
-          "Build employee dashboard: Manage their personal information: can update their information, review history logs",
+          "Build employee dashboard: Manage their personal information: can update their information, review history logs.",
       },
     ],
+  },
+];
+
+export const skillData = [
+  {
+    id: 1,
+    title: "Frontend ",
+    description:
+      "RESTful API, React.js, Next.js, TypeScript, JavaScript, Material UI, Ant Design, Bootstrap 5, TailwindCSS, HTLM5, CSS, Responsive Design",
+    image: "frontend.png",
+  },
+  {
+    id: 2,
+    title: "Backend ",
+    description:
+      "Java, Spring Boot, Spring Frameworks, Design APIs, Mapper, DTO, ORM",
+    image: "backend.png",
+  },
+  {
+    id: 3,
+    title: "Database",
+    description: "SQL Server, MySQL, PostgreSQL",
+    image: "database.png",
+  },
+  {
+    id: 4,
+    title: "Others",
+    description:
+      "Github Desktop, Git, Postman, Debugging code, Intellij Idea, Visual Studio Code.",
+    image: "",
+  },
+];
+
+export const certificationData = [
+  {
+    id: 1,
+    title: "Advanced Diploma In Software Engineering",
+    describe:
+      "Completed a certification course provided by FPT Academy International (FAI).",
+  },
+  {
+    id: 2,
+    title: "Managing an Agile Team",
+    describe: "Completed a certification course provided by Coursera.",
   },
 ];

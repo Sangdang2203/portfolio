@@ -5,6 +5,7 @@ import { IconLinkedIn } from "@/assets/icons/IconLinkedIn";
 import { IconWhatsApp } from "@/assets/icons/IconWhatsApp";
 import { IconGithub } from "@/assets/icons/IconGithub";
 import { Tooltip } from "@mui/material";
+import { PhoneAndroid } from "@mui/icons-material";
 
 export default function FooterComponent() {
   return (
@@ -40,12 +41,8 @@ export default function FooterComponent() {
           </Link>
         </Tooltip>
 
-        <Tooltip title="WhatsApp">
-          <Link
-            className="socialContainer containerFour"
-            href="https://web.whatsapp.com/"
-            target="_blank"
-          >
+        <Tooltip title="Call">
+          <Link className="socialContainer containerFour" href="tel:0909751772">
             <IconWhatsApp />
           </Link>
         </Tooltip>
