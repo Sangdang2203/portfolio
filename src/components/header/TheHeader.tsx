@@ -2,15 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import {
-  Button,
-  Fade,
-  FormControlLabel,
-  Menu,
-  MenuItem,
-  Switch,
-  Tooltip,
-} from "@mui/material";
+import { Button, Fade, Popover, Box } from "@mui/material";
 
 const links = [
   {
@@ -45,9 +37,11 @@ export default function HeaderComponent() {
     null
   );
   const open = Boolean(anchorElement);
+
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElement(event.currentTarget);
   };
+
   const handleClose = () => {
     setAnchorElement(null);
   };
@@ -63,33 +57,39 @@ export default function HeaderComponent() {
           onClick={handleClick}
           className="text-2xl button"
         >
-          <span className="actual-text">&nbsp;portfilio&nbsp;</span>
+          <span className="actual-text">&nbsp;portfolio&nbsp;</span>
           <span aria-hidden="true" className="hover-text">
-            &nbsp;portfilio&nbsp;
+            &nbsp;portfolio&nbsp;
           </span>
         </Button>
-        <Menu
+        <Popover
           id="fade-menu"
-          MenuListProps={{
-            "aria-labelledby": "fade-button",
-          }}
           anchorEl={anchorElement}
           open={open}
           onClose={handleClose}
-          TransitionComponent={Fade}
+          transitionDuration={300}
+          anchorOrigin={{
+            vertical: "bottom",
+            horizontal: "left",
+          }}
+          transformOrigin={{
+            vertical: "top",
+            horizontal: "left",
+          }}
         >
-          {links.map((link) => {
-            return (
-              <MenuItem
-                key={link.key}
-                onClick={handleClose}
-                className="capitalize"
-              >
-                <Link href={link.href}>{link.label}</Link>
-              </MenuItem>
-            );
-          })}
-        </Menu>
+          <Box
+            display="flex"
+            flexDirection="row"
+            padding={1}
+            bgcolor="background.paper"
+          >
+            {links.map((link) => (
+              <Link key={link.key} href={link.href} className="capitalize p-2">
+                {link.label}
+              </Link>
+            ))}
+          </Box>
+        </Popover>
       </div>
     </div>
   );

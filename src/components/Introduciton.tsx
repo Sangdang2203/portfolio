@@ -1,7 +1,7 @@
 "use client";
 
 import { IconInfo } from "@/assets/icons/IconInfo";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 
 export default function IntroComponent() {
@@ -12,7 +12,7 @@ export default function IntroComponent() {
     setHidden(!hidden);
   };
   return (
-    <>
+    <Box sx={{ my: 5 }}>
       <h3 className="text-lg md:text-[2rem]">Hello, I am</h3>
       <Typography className="uppercase text-xl hover:text-red-900 ease-linear duration-500 cursor-pointer py-2 md:py-6 md:text-[2rem]">
         <strong>dang van sang</strong>
@@ -71,6 +71,6 @@ export default function IntroComponent() {
           </div>
         </div>
       )}
-    </>
+    </Box>
   );
 }
