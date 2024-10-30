@@ -129,6 +129,97 @@ export const projectData = [
       },
     ],
   },
+  {
+    id: 3,
+    title: "NZ Shop",
+    duration: "01/2024 - 03/2024",
+    teamSize: 4,
+    describe: "",
+    githubLinks: [
+      { id: 1, name: "Frontend", link: "https://tinyurl.com/frontend-nzshop" },
+      { id: 2, name: "Backend", link: "https://tinyurl.com/backend-nzshop" },
+    ],
+    technologies: [
+      { id: 1, name: "Backend", description: "PHP, Laravel Frameworks" },
+      {
+        id: 2,
+        name: "Frontend",
+        description:
+          "Vuejs, Vuetify, Axios, RESTful APIs, Material UI, TailwindCSS, HTML5, CSS, JavaScript, pinia, ckeditor 5.",
+      },
+      { id: 3, name: "Database", description: "MySQL" },
+    ],
+    contributions: [
+      {
+        id: 1,
+        describe:
+          "Design and optimize the APIs for efficient communication between the front-end and backend, reducing load times.",
+      },
+      {
+        id: 2,
+        describe: "Performing authorization for users.",
+      },
+      {
+        id: 3,
+        describe:
+          "Build product detail page: User can view product details, product promotion, comments.",
+      },
+      {
+        id: 4,
+        describe:
+          "Build admin dashboard (CRUD): post management, product management, page management, slider management.",
+      },
+      {
+        id: 5,
+        describe: "Combine chat GPT for composing product description.",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Chic Lighting",
+    duration: "01/2024 - 03/2024",
+    teamSize: 1,
+    describe: "",
+    githubLinks: [
+      { id: 1, name: "Frontend", link: "https://tinyurl.com/chic-lighting" },
+    ],
+    technologies: [
+      {
+        id: 1,
+        name: "Frontend",
+        description: "HTML5, CSS, JavaScript, AngularJS, Bootstrap 5.",
+      },
+    ],
+    contributions: [
+      {
+        id: 1,
+        describe:
+          "Built Homepage, Product Detail Page, Contact Page, Gallery Page, About Us Page",
+      },
+      {
+        id: 2,
+        describe: "Built functions: login, register account",
+      },
+      {
+        id: 3,
+        describe:
+          "Filtering function: filter products through product's branch.",
+      },
+      {
+        id: 4,
+        describe: "Searching function: search products through product's name.",
+      },
+      {
+        id: 5,
+        describe: "Built counting visitor function.",
+      },
+      {
+        id: 6,
+        describe: "Improve the user interface and user experience.",
+      },
+    ],
+  },
 ];
 
 export const skillData = [
