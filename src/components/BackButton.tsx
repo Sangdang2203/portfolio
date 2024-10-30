@@ -24,10 +24,11 @@ export default function BackButton() {
   }
   return (
     <>
-      <IconButton onClick={() => scrollToTop(200)}>
+      <IconButton sx={{ p: 4 }} onClick={() => scrollToTop(200)}>
         <KeyboardDoubleArrowUp
           color="info"
-          sx={{ bgcolor: "white", borderRadius: "100%" }}
+          fontSize="large"
+          className="bg-white rounded-full hover:opacity-85"
         />
       </IconButton>
     </>
