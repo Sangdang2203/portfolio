@@ -145,7 +145,7 @@ export const projectData = [
         id: 2,
         name: "Frontend",
         description:
-          "Vue.js Vuetify, Axios, RESTful APIs, Material UI, TailwindCSS, HTML5, CSS, JavaScript, pinia, ckeditor 5.",
+          "Vue.js, Vuetify, Axios, RESTful APIs, Material UI, TailwindCSS, HTML5, CSS, JavaScript, pinia, ckeditor 5.",
       },
       { id: 3, name: "Database", description: "MySQL" },
     ],
