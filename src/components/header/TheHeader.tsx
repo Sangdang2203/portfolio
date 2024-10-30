@@ -41,7 +41,6 @@ const links = [
 ];
 
 export default function HeaderComponent() {
-  const [theme, setTheme] = React.useState("light");
   const [anchorElement, setAnchorElement] = React.useState<null | HTMLElement>(
     null
   );
@@ -51,18 +50,6 @@ export default function HeaderComponent() {
   };
   const handleClose = () => {
     setAnchorElement(null);
-  };
-
-  React.useEffect(() => {
-    // Prevent infinite loop by wrapping the state update in a useEffect
-    const prefersDarkScheme = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    setTheme(prefersDarkScheme ? "dark" : "light");
-  }, []);
-
-  const changeTheme = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setTheme(event.target.checked ? "dark" : "light");
   };
 
   return (
