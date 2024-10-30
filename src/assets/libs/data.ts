@@ -145,7 +145,7 @@ export const projectData = [
         id: 2,
         name: "Frontend",
         description:
-          "Vuejs, Vuetify, Axios, RESTful APIs, Material UI, TailwindCSS, HTML5, CSS, JavaScript, pinia, ckeditor 5.",
+          "Vue.js Vuetify, Axios, RESTful APIs, Material UI, TailwindCSS, HTML5, CSS, JavaScript, pinia, ckeditor 5.",
       },
       { id: 3, name: "Database", description: "MySQL" },
     ],
@@ -157,21 +157,18 @@ export const projectData = [
       },
       {
         id: 2,
-        describe: "Performing authorization for users.",
-      },
-      {
-        id: 3,
         describe:
           "Build product detail page: User can view product details, product promotion, comments.",
       },
       {
-        id: 4,
+        id: 3,
         describe:
           "Build admin dashboard (CRUD): post management, product management, page management, slider management.",
       },
       {
-        id: 5,
-        describe: "Combine chat GPT for composing product description.",
+        id: 4,
+        describe:
+          "Combine chat GPT for composing product description when the administrator add new products into the list.",
       },
     ],
   },
