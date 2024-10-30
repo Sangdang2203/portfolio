@@ -19,7 +19,7 @@ export default function WorkingExperienceComponent() {
   return (
     <>
       <button className="button" data-text="Experience">
-        <span className="actual-text">&nbsp;experience&nbsp;</span>
+        <span className="">&nbsp;experience&nbsp;</span>
       </button>
       <Box>
         <Tabs

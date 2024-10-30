@@ -15,7 +15,7 @@ export default function ProjectComponent() {
   return (
     <>
       <button className="button" data-text="Project">
-        <span className="actual-text">&nbsp;projects&nbsp;</span>
+        <span className="">&nbsp;projects&nbsp;</span>
       </button>
       <Box>
         <Tabs

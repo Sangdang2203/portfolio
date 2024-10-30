@@ -6,7 +6,7 @@ export default function TechnicalSkillComponent() {
   return (
     <>
       <button className="button" data-text="Project">
-        <span className="actual-text">&nbsp;technical skills&nbsp;</span>
+        <span className="">&nbsp;technical skills&nbsp;</span>
       </button>
       <Box>
         {skillData.map((skill) => {

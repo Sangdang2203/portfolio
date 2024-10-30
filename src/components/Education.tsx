@@ -12,7 +12,7 @@ export default function EducationComponent() {
   return (
     <>
       <button className="button" data-text="Experience">
-        <span className="actual-text">&nbsp;education&nbsp;</span>
+        <span className="">&nbsp;education&nbsp;</span>
       </button>
       <Box m={2}>
         <Typography variant="h6">Software Engineering</Typography>
@@ -38,7 +38,7 @@ export default function EducationComponent() {
 
       {/* CERTIFICATION */}
       <button className="button" data-text="Project">
-        <span className="actual-text">&nbsp;certification&nbsp;</span>
+        <span className="">&nbsp;certification&nbsp;</span>
       </button>
       <Box my={2}>
         {certificationData.map((item) => {
