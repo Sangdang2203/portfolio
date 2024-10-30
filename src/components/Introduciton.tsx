@@ -14,7 +14,10 @@ export default function IntroComponent() {
   return (
     <Box sx={{ my: 5 }}>
       <h3 className="text-lg md:text-[2rem]">Hello, I am</h3>
-      <Typography className="uppercase ease-linear duration-500 cursor-pointer py-2 md:py-6 hover:text-red-900 ">
+      <Typography
+        variant="h6"
+        className="uppercase ease-linear duration-500 cursor-pointer py-2 md:py-6 hover:text-red-900 "
+      >
         <strong className="text-xl md:text-3xl">dang van sang</strong>
         <span className="capitalize mx-3 text-xl md:text-3xl">(Jonathan)</span>
       </Typography>
