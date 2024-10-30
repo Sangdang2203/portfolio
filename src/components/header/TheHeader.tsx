@@ -53,7 +53,7 @@ export default function HeaderComponent() {
   };
 
   return (
-    <div className={`my-10 w-full flex justify-between items-center ${theme}`}>
+    <div className={`my-10 w-full flex justify-between items-center`}>
       <div className="flex justify-start items-center">
         <Button
           id="fade-button"
