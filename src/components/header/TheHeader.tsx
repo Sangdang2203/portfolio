@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { Button, Popover, Box } from "@mui/material";
+import { MenuSharp } from "@mui/icons-material";
 
 const links = [
   {
@@ -62,6 +63,12 @@ export default function HeaderComponent() {
             &nbsp;portfolio&nbsp;
           </span>
         </Button>
+      </div>
+
+      <div>
+        <Button onClick={handleClick} className="text-2xl button">
+          <MenuSharp fontSize="large" color="primary" className="md:hidden" />
+        </Button>
         <Popover
           id="fade-menu"
           anchorEl={anchorElement}
@@ -79,7 +86,7 @@ export default function HeaderComponent() {
         >
           <Box
             display="flex"
-            flexDirection="row"
+            flexDirection="column"
             padding={1}
             bgcolor="background.paper"
           >
