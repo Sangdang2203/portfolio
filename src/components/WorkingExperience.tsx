@@ -23,7 +23,6 @@ export default function WorkingExperienceComponent() {
       </button>
       <Box>
         <Tabs
-          sx={{ color: "white" }}
           value={currentTab}
           onChange={handleChangeTab}
           variant="scrollable"
