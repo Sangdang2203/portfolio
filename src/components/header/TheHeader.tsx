@@ -57,7 +57,7 @@ export default function HeaderComponent() {
           onClick={handleClick}
           className="text-2xl button"
         >
-          <span className="actual-text">&nbsp;portfolio&nbsp;</span>
+          <span className="text-2xl">&nbsp;portfolio&nbsp;</span>
           <span aria-hidden="true" className="hover-text">
             &nbsp;portfolio&nbsp;
           </span>
