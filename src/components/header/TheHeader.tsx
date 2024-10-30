@@ -3,8 +3,6 @@
 import React from "react";
 import { WbSunny, Nightlight } from "@mui/icons-material";
 import Link from "next/link";
-import { IconProject } from "@/assets/icons/IconProject";
-import { DashiconsNetworking } from "@/assets/icons/DashiconsNetworking";
 import {
   Button,
   Fade,
@@ -12,10 +10,7 @@ import {
   Menu,
   MenuItem,
   Switch,
-  ToggleButton,
-  ToggleButtonGroup,
   Tooltip,
-  Typography,
 } from "@mui/material";
 
 const links = [
@@ -97,7 +92,7 @@ export default function HeaderComponent() {
           onClose={handleClose}
           TransitionComponent={Fade}
         >
-          {links.map((link, index) => {
+          {links.map((link) => {
             return (
               <MenuItem
                 key={link.key}

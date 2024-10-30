@@ -1,6 +1,3 @@
-import { describe } from "node:test";
-import { title } from "process";
-
 export const experienceData = [
   {
     id: 1,

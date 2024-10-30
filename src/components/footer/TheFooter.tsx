@@ -5,7 +5,6 @@ import { IconLinkedIn } from "@/assets/icons/IconLinkedIn";
 import { IconWhatsApp } from "@/assets/icons/IconWhatsApp";
 import { IconGithub } from "@/assets/icons/IconGithub";
 import { Tooltip } from "@mui/material";
-import { PhoneAndroid } from "@mui/icons-material";
 
 export default function FooterComponent() {
   return (

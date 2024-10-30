@@ -1,7 +1,7 @@
 "use client";
 
 import { experienceData } from "@/assets/libs/data";
-import { Box, Divider, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Tab, Tabs, Typography } from "@mui/material";
 import {
   Business,
   CalendarMonth,

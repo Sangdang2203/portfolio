@@ -2,14 +2,8 @@
 
 import { projectData } from "@/assets/libs/data";
 import { a11yProps, CustomTabPanel } from "@/components/CustomTabPanel";
-import {
-  Business,
-  CalendarMonth,
-  Check,
-  GitHub,
-  People,
-} from "@mui/icons-material";
-import { Box, Divider, Tab, Tabs, Typography } from "@mui/material";
+import { CalendarMonth, Check, GitHub, People } from "@mui/icons-material";
+import { Box, Tab, Tabs, Typography } from "@mui/material";
 import Link from "next/link";
 import React from "react";
 
