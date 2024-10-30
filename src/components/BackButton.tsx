@@ -24,7 +24,7 @@ export default function BackButton() {
   }
   return (
     <>
-      <IconButton sx={{ p: 4 }} onClick={() => scrollToTop(200)}>
+      <IconButton onClick={() => scrollToTop(200)}>
         <KeyboardDoubleArrowUp
           color="info"
           fontSize="large"
