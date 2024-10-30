@@ -67,6 +67,7 @@ body {
 }
 /* this is the text, when you hover on button */
 .hover-text {
+  margin: 6px 0 0 3px;
   position: absolute;
   box-sizing: border-box;
   content: attr(data-text);
