@@ -22,7 +22,7 @@ export default function IntroComponent() {
         <span className="capitalize mx-3 text-xl md:text-3xl">(Jonathan)</span>
       </Typography>
       <Typography className="text-sm md:text-[1.5rem]">
-        I&apos;m a front end developer.
+        I&apos;m a full stack developer.
       </Typography>
 
       {!hidden && (

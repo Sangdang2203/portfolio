@@ -70,7 +70,7 @@ export default function HeaderComponent() {
           transitionDuration={300}
           anchorOrigin={{
             vertical: "bottom",
-            horizontal: "left",
+            horizontal: "right",
           }}
           transformOrigin={{
             vertical: "top",
@@ -87,7 +87,7 @@ export default function HeaderComponent() {
               <Link
                 key={link.key}
                 href={link.href}
-                className="capitalize p-2"
+                className="capitalize p-2 hover:text-yellow-500"
                 onClick={handleClose}
               >
                 {link.label}

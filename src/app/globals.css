@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -10,7 +10,6 @@ html{
   --background: #171717;
   --foreground: #ffffff;
 }
-
 
 body {
   color: var(--foreground);
@@ -25,7 +24,7 @@ body {
   }
 }
 
-/* From Uiverse.io by satyamchaudharydev */ 
+/* From Uiverse.io by satyamchaudharydev */
 /* === removing default button style ===*/
 .button {
   margin: 0;
@@ -39,7 +38,7 @@ body {
 /* button styling */
 .button {
   --border-right: 6px;
-  --text-stroke-color: rgba(255,255,255,0.6);
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
   --animation-color: #08b04e;
   --fs-size: 2em;
   letter-spacing: 4px;
@@ -54,8 +53,8 @@ body {
 /* this is the text, when you hover on button */
 .hover-text {
   margin: 6px 0 0 3px;
-  font-size: 1.875rem ;
-  line-height: 2rem ;
+  font-size: 1.875rem;
+  line-height: 2rem;
   position: absolute;
   box-sizing: border-box;
   content: attr(data-text);
@@ -69,5 +68,40 @@ body {
 /* hover */
 .button:hover .hover-text {
   width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color))
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Cách tùy chỉnh thanh trượt cho Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* Tùy chỉnh cho các trình duyệt khác */
+.scrollable {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none;
 }

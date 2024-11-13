@@ -59,7 +59,7 @@ export default function Home() {
       </Container>
 
       <Tooltip title="Back to top">
-        <div className="fixed bottom-10 right-10">
+        <div className="fixed bottom-3 right-3">
           <BackButton />
         </div>
       </Tooltip>

@@ -2,7 +2,13 @@
 
 import { projectData } from "@/assets/libs/data";
 import { a11yProps, CustomTabPanel } from "@/components/CustomTabPanel";
-import { CalendarMonth, Check, GitHub, People } from "@mui/icons-material";
+import {
+  CalendarMonth,
+  Check,
+  GitHub,
+  People,
+  LanguageRounded,
+} from "@mui/icons-material";
 import { Box, Tab, Tabs, Typography } from "@mui/material";
 import Link from "next/link";
 import React from "react";
@@ -19,7 +25,7 @@ export default function ProjectComponent() {
       </button>
       <Box>
         <Tabs
-          sx={{ color: "white" }}
+          className="text-white overflow-auto"
           value={currentTab}
           onChange={handleChangeTab}
           variant="scrollable"
@@ -53,7 +59,7 @@ export default function ProjectComponent() {
                 <div className="flex my-2 items-start">
                   <People fontSize="small" className="mr-2" />
                   <Typography variant="body2">
-                    {item.teamSize + "members"}
+                    {item.teamSize + " members"}
                   </Typography>
                 </div>
                 <div className="flex my-2 items-start">
@@ -75,6 +81,22 @@ export default function ProjectComponent() {
                       })}
                   </Typography>
                 </div>
+                {item.deployedLinks.length > 0 ? (
+                  <div className="flex my-2 items-start">
+                    <LanguageRounded fontSize="small" className="mr-2" />
+                    <Typography variant="body2">
+                      {item.deployedLinks.map((item) => {
+                        return (
+                          <Link key={item.id} href={item.link} target="_blank">
+                            <Typography variant="body2">{item.link}</Typography>
+                          </Link>
+                        );
+                      })}
+                    </Typography>
+                  </div>
+                ) : (
+                  ""
+                )}
                 <Typography variant="body2">{item.describe}</Typography>
                 <Typography className="mt-2" variant="h6">
                   Technologies:
