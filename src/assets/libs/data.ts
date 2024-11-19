@@ -134,7 +134,7 @@ export const projectData = [
   {
     id: 3,
     title: "NZ Shop",
-    duration: "01/2024 - 03/2024",
+    duration: "08/2024 - 10/2024",
     teamSize: 4,
     describe: "",
     githubLinks: [
@@ -148,7 +148,7 @@ export const projectData = [
         id: 2,
         name: "Frontend",
         description:
-          "Vue.js, Vuetify, Axios, RESTful APIs, Material UI, TailwindCSS, HTML5, CSS, JavaScript, pinia, ckeditor 5.",
+          "Vue.js, Vuetify, Axios, RESTful APIs, Material UI, TailwindCSS, HTML5, CSS, JavaScript, Pinia, ckeditor 5.",
       },
       { id: 3, name: "Database", description: "MySQL" },
     ],
@@ -178,7 +178,7 @@ export const projectData = [
   {
     id: 4,
     title: "Chic Lighting",
-    duration: "01/2024 - 03/2024",
+    duration: "01/2023 - 02/2023",
     teamSize: 1,
     describe: "",
     githubLinks: [

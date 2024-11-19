@@ -10,7 +10,7 @@ export default function BackButton() {
       const timeElapsed = currentTime - startTime;
       const progress = Math.min(timeElapsed / duration, 1);
 
-      // Tính toán vị trí cuộn mới
+      // Calculating new scroll position 
       const newScrollTop = start * (1 - progress);
       window.scrollTo(0, newScrollTop);
 
