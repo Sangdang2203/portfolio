@@ -43,12 +43,8 @@ export default function IntroComponent() {
       {showSummary && (
         <div id="summary" className="mt-2 text-sm md:text-lg md:mt-4">
           <Typography className="py-2 md:py-4">
-            As a recent graduate in Software Engineering, I have a solid
-            understanding of programming languages such as Java and .NET, along
-            with experience working with frameworks like React.js, Next.js.
-            Although I have limited practical experience, I have participated in
-            several academic projects that have helped me develop
-            problem-solving skills and teamwork abilities.
+            As a software engineer, I have a solid understanding of React.js,
+            Next.js, along with experience working with Java, ASP.NET and PHP.
           </Typography>
           <Typography>
             My short-term goal is to enhance skills in full-stack development,
