@@ -134,7 +134,7 @@ export const projectData = [
   {
     id: 3,
     title: "NZ Shop",
-    duration: "08/2024 - 10/2024",
+    duration: "08/2023 - 10/2023",
     teamSize: 4,
     describe: "",
     githubLinks: [
