@@ -20,10 +20,10 @@ export default function ProjectComponent() {
   };
   return (
     <>
-      <button className="button" data-text="Project">
-        <span className="">&nbsp;projects&nbsp;</span>
-      </button>
       <Box>
+        <button className="button" data-text="Project">
+          <span className="">&nbsp;projects&nbsp;</span>
+        </button>
         <Tabs
           className="text-white overflow-auto"
           value={currentTab}
@@ -47,7 +47,9 @@ export default function ProjectComponent() {
             );
           })}
         </Tabs>
+      </Box>
 
+      <Box>
         {projectData.map((item, index) => {
           return (
             <Box key={index} sx={{ mt: 3 }}>

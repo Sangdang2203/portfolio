@@ -34,24 +34,25 @@ export default function Home() {
           </Grid>
         </div>
 
-        <Box sx={{ my: 10 }}>
-          <Grid container>
-            <Grid id="experience" item sm={12} md={6} xl={6}>
-              <WorkingExperienceComponent />
-            </Grid>
-
-            <Grid id="projects" item sm={12} md={6} xl={6}>
-              <ProjectComponent />
-            </Grid>
-
-            <Grid id="skills" item sm={12} md={6}>
-              <TechnicalSkillComponent />
-            </Grid>
-
-            <Grid id="education" item sm={12} md={6}>
-              <EducationComponent />
-            </Grid>
+        <Grid container sx={{ my: 10 }}>
+          <Grid id="experience" item sm={12} md={6} xl={6}>
+            <WorkingExperienceComponent />
           </Grid>
+
+          <Grid id="projects" item sm={12} md={6} xl={6}>
+            <ProjectComponent />
+          </Grid>
+
+          <Grid id="skills" item sm={12} md={6}>
+            <TechnicalSkillComponent />
+          </Grid>
+
+          <Grid id="education" item sm={12} md={6}>
+            <EducationComponent />
+          </Grid>
+        </Grid>
+
+        <Box sx={{ my: 10 }}>
           <footer id="contact" className="flex justify-center my-10">
             <FooterComponent />
           </footer>
