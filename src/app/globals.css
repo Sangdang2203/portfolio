@@ -24,8 +24,6 @@ body {
   }
 }
 
-/* From Uiverse.io by satyamchaudharydev */
-/* === removing default button style ===*/
 .button {
   margin: 0;
   height: auto;
