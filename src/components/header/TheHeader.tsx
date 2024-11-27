@@ -14,7 +14,7 @@ const links = [
   {
     key: "projects",
     label: "projects",
-    href: "#project",
+    href: "#projects",
   },
   {
     key: "skills",
