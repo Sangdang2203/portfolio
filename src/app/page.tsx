@@ -59,11 +59,11 @@ export default function Home() {
         </Box>
       </Container>
 
-      <Tooltip title="Back to top">
-        <div className="fixed bottom-3 right-3">
+      <div className="fixed bottom-3 right-3">
+        <Tooltip title="Back to top">
           <BackButton />
-        </div>
-      </Tooltip>
+        </Tooltip>
+      </div>
     </>
   );
 }

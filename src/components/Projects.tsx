@@ -27,6 +27,7 @@ export default function ProjectComponent() {
         <Tabs
           className="text-white overflow-auto"
           value={currentTab}
+          textColor="inherit"
           onChange={handleChangeTab}
           variant="scrollable"
           scrollButtons

@@ -25,6 +25,7 @@ export default function WorkingExperienceComponent() {
         <Tabs
           value={currentTab}
           onChange={handleChangeTab}
+          textColor="inherit"
           variant="scrollable"
           scrollButtons
           allowScrollButtonsMobile
