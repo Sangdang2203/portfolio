@@ -1,3 +1,31 @@
+export const navLinks = [
+  {
+    key: "experience",
+    label: "experience",
+    href: "#experience",
+  },
+  {
+    key: "projects",
+    label: "projects",
+    href: "#projects",
+  },
+  {
+    key: "skills",
+    label: "skills",
+    href: "#skills",
+  },
+  {
+    key: "education",
+    label: "education",
+    href: "#education",
+  },
+  {
+    key: "contact",
+    label: "contact",
+    href: "#contact",
+  },
+];
+
 export const experienceData = [
   {
     id: 1,

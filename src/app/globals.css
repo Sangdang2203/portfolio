@@ -6,6 +6,9 @@ html {
   scroll-behavior: smooth;
 }
 
+*{
+  font-family: Arial, Helvetica, sans-serif;}
+
 :root {
   --background: #171717;
   --foreground: #ffffff;
@@ -14,7 +17,6 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
   min-height: 20vh;
 }
 
@@ -33,7 +35,7 @@ body {
   cursor: pointer;
 }
 
-/* button styling */
+
 .button {
   --border-right: 6px;
   --text-stroke-color: rgba(255, 255, 255, 0.6);
@@ -48,7 +50,7 @@ body {
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
-/* this is the text, when you hover on button */
+
 .hover-text {
   margin: 6px 0 0 3px;
   font-size: 1.875rem;
@@ -63,7 +65,7 @@ body {
   overflow: hidden;
   -webkit-text-stroke: 1px var(--animation-color);
 }
-/* hover */
+
 .button:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
@@ -88,13 +90,12 @@ body {
   background: #555;
 }
 
-/* Cách tùy chỉnh thanh trượt cho Firefox */
+
 * {
   scrollbar-width: thin;
   scrollbar-color: #888 #f1f1f1;
 }
 
-/* Tùy chỉnh cho các trình duyệt khác */
 .scrollable {
   overflow-y: scroll;
   overflow-x: hidden;

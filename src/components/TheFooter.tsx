@@ -1,10 +1,10 @@
 import Link from "next/link";
-import "../footer/footer.css";
+import "../assets/styles/footer.css";
+import { Tooltip } from "@mui/material";
+import { IconGithub } from "@/assets/icons/IconGithub";
 import { IconTwister } from "@/assets/icons/IconTwister";
 import { IconLinkedIn } from "@/assets/icons/IconLinkedIn";
 import { IconWhatsApp } from "@/assets/icons/IconWhatsApp";
-import { IconGithub } from "@/assets/icons/IconGithub";
-import { Tooltip } from "@mui/material";
 
 export default function FooterComponent() {
   return (

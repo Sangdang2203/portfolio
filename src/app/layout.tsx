@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import localFont from "next/font/local";
+import FooterComponent from "@/components/TheFooter";
+import HeaderComponent from "@/components/TheHeader";
+import { Container } from "@mui/material";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -13,11 +15,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Summary of The Portfolio",
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -28,7 +25,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <header>
+          <HeaderComponent />
+        </header>
+
+        <Container className="z-0">{children}</Container>
+
+        <footer id="contact" className="flex justify-center my-10">
+          <FooterComponent />
+        </footer>
       </body>
     </html>
   );
