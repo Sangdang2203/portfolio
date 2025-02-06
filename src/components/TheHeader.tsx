@@ -74,7 +74,7 @@ export default function HeaderComponent() {
               ))}
           </div>
         </div>
-        <div className="w-full fixed bottom-0 right-0 bg-white py-2 md:flex justify-end items-end">
+        <div className="w-full fixed bottom-0 right-0 bg-white py-2 hidden md:flex justify-end items-end">
           {social_media.length > 0 &&
             social_media.map((item) => {
               return (
