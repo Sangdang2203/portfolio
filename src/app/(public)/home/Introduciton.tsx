@@ -1,8 +1,8 @@
 "use client";
 
-import { IconInfo } from "@/assets/icons/IconInfo";
-import { Box, Typography } from "@mui/material";
 import React from "react";
+import { Typography } from "@mui/material";
+import { IconInfo } from "@/assets/icons/IconInfo";
 
 export default function IntroComponent() {
   const [showSummary, setShowSummary] = React.useState(false);
@@ -12,7 +12,7 @@ export default function IntroComponent() {
     setHidden(!hidden);
   };
   return (
-    <Box sx={{ my: 5 }}>
+    <div className="my-5 z-0">
       <h3 className="text-lg md:text-[2rem]">Hello, I am</h3>
       <Typography
         variant="h6"
@@ -68,6 +68,6 @@ export default function IntroComponent() {
           </div>
         </div>
       )}
-    </Box>
+    </div>
   );
 }

@@ -44,7 +44,6 @@ body {
   letter-spacing: 4px;
   text-decoration: none;
   font-size: var(--fs-size);
-  font-family: "Arial";
   position: relative;
   text-transform: uppercase;
   color: transparent;

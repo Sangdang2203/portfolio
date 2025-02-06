@@ -1,4 +1,3 @@
-import { Box, Grid, Tooltip } from "@mui/material";
 import IntroComponent from "./Introduciton";
 import WorkingExperienceComponent from "./WorkingExperience";
 import ProjectComponent from "./Projects";
@@ -11,48 +10,35 @@ export default function HomePage() {
   return (
     <>
       <div>
-        <div id="intro" className="w-auto mt-10">
-          <Grid container className="flex justify-between items-center">
-            <Grid item sm={12} md={8} xl={8}>
-              <IntroComponent />
-            </Grid>
-            <Grid
-              item
-              sm={12}
-              md={4}
-              xl={4}
-              className="relative overflow-hidden"
-            >
-              <AvatarComponent />
-            </Grid>
-          </Grid>
+        <div id="intro" className="w-full grid grid-col-1 md:grid-cols-2">
+          <div className="my-5">
+            <IntroComponent />
+          </div>
+          <div className="flex justify-center md:flex md:justify-end">
+            <AvatarComponent />
+          </div>
         </div>
 
-        <Grid container sx={{ my: 10 }}>
-          <Grid id="experience" item sm={12} md={6} xl={6}>
-            <WorkingExperienceComponent />
-          </Grid>
+        <section id="experience" className="my-5">
+          <WorkingExperienceComponent />
+        </section>
 
-          <Grid id="projects" item sm={12} md={6} xl={6}>
-            <ProjectComponent />
-          </Grid>
+        <section id="projects" className="my-5">
+          <ProjectComponent />
+        </section>
 
-          <Grid id="skills" item sm={12} md={6}>
+        <section className="grid grid-cols-1 md:grid-cols-2 my-5">
+          <div id="skills">
             <TechnicalSkillComponent />
-          </Grid>
-
-          <Grid id="education" item sm={12} md={6}>
+          </div>
+          <div id="education">
             <EducationComponent />
-          </Grid>
-        </Grid>
-
-        <Box sx={{ my: 10 }}></Box>
+          </div>
+        </section>
       </div>
 
-      <div className="fixed bottom-3 right-3">
-        <Tooltip title="Back to top">
-          <BackButton />
-        </Tooltip>
+      <div className="fixed bottom-3 right-3" title="Back To Top">
+        <BackButton />
       </div>
     </>
   );

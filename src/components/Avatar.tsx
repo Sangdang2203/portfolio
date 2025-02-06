@@ -7,9 +7,7 @@ export default function AvatarComponent() {
       <Image
         src={Avatar}
         alt="Avatar"
-        width={400}
-        height={400}
-        className="transition-transform duration-300 ease-in-out hover:scale-110 w-auto h-auto"
+        className="transition-transform duration-300 ease-in-out hover:scale-110 max-w-[300px] max-h-[300px]"
       />
     </>
   );

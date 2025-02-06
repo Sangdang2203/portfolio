@@ -1,38 +1,31 @@
 import { skillData } from "@/assets/libs/data";
-import { Box, Typography } from "@mui/material";
 import { CheckCircleOutline } from "@mui/icons-material";
 
 export default function TechnicalSkillComponent() {
   return (
-    <>
+    <div className="z-0">
       <button className="button" data-text="Project">
         <span className="">&nbsp;technical skills&nbsp;</span>
       </button>
-      <Box>
+      <div>
         {skillData.map((skill) => {
           return (
-            <Box
-              key={skill.id}
-              my={2}
-              sx={{ display: "flex", alignItems: "flex-start" }}
-            >
+            <div key={skill.id} className="my-2 flex items-start">
               <CheckCircleOutline
                 color="success"
                 fontSize="medium"
                 className="mx-2"
               />
-              <Box>
-                <Typography variant="body1" className="uppercase">
+              <div>
+                <p className="text-sm md:text-lg capitalize font-semibold">
                   {skill.title}
-                </Typography>
-                <Typography variant="body2" className="pr-5">
-                  {skill.description}
-                </Typography>
-              </Box>
-            </Box>
+                </p>
+                <p className="text-sm md:text-lg pr-5">{skill.description}</p>
+              </div>
+            </div>
           );
         })}
-      </Box>
-    </>
+      </div>
+    </div>
   );
 }

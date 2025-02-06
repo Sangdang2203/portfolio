@@ -15,24 +15,24 @@ export default function EducationComponent() {
         <span className="">&nbsp;education&nbsp;</span>
       </button>
       <Box m={2}>
-        <Typography variant="h6">Software Engineering</Typography>
+        <p className="text-sm md:text-lg font-semibold">Software Engineering</p>
         <div className="flex my-2 items-start">
           <School fontSize="small" className="mr-2" />
-          <Typography>FPT Academy International (FAI)</Typography>
+          <p className="text-sm md:text-lg">FPT Academy International (FAI)</p>
         </div>
         <div className="flex my-2 items-start">
           <CalendarMonth fontSize="small" className="mr-2" />
-          <Typography variant="body2">10/2022 - 10/2024</Typography>
+          <p className="text-sm md:text-lg">10/2022 - 10/2024</p>
         </div>
         <div className="flex my-2 items-start">
           <LocationOn fontSize="small" className="mr-2" />
-          <Typography variant="body2">
+          <p className="text-sm md:text-lg">
             391A Nam Ky Khoi Nghia, Vo Thi Sau Ward, District 3, HCMC, Vietnam.
-          </Typography>
+          </p>
         </div>
         <div className="flex my-2 items-start">
           <Speed fontSize="small" className="mr-2" />
-          <Typography variant="body2">GPA: 78/100</Typography>
+          <p className="text-sm md:text-lg">GPA: 78/100</p>
         </div>
       </Box>
 
@@ -40,7 +40,7 @@ export default function EducationComponent() {
       <button className="button" data-text="Project">
         <span className="">&nbsp;certification&nbsp;</span>
       </button>
-      <Box my={2}>
+      <div className="my-2">
         {certificationData.map((item) => {
           return (
             <div key={item.id} className="flex items-start my-3">
@@ -49,14 +49,14 @@ export default function EducationComponent() {
                 fontSize="large"
                 className="mx-2"
               />
-              <Box>
+              <div>
                 <Typography variant="h6">{item.title}</Typography>
-                <Typography variant="body2">{item.describe}</Typography>
-              </Box>
+                <p className="text-sm md:text-lg">{item.describe}</p>
+              </div>
             </div>
           );
         })}
-      </Box>
+      </div>
     </>
   );
 }

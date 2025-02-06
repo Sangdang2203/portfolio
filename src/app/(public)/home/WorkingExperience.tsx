@@ -1,82 +1,96 @@
 "use client";
 
+import React from "react";
 import { experienceData } from "@/assets/libs/data";
-import { Box, Tab, Tabs, Typography } from "@mui/material";
+import { IconButton, Typography } from "@mui/material";
 import {
   Business,
   CalendarMonth,
   Check,
   LocationOn,
 } from "@mui/icons-material";
-import React from "react";
-import { a11yProps, CustomTabPanel } from "@/components/CustomTabPanel";
+import NextIcon from "@/assets/icons/NextIcon";
+import PreviousIcon from "@/assets/icons/PreviousIcon";
+import PositionIcon from "@/assets/icons/PositionIcon";
 
 export default function WorkingExperienceComponent() {
-  const [currentTab, setCurrentTab] = React.useState(0);
-  const handleChangeTab = (event: React.SyntheticEvent, newValue: number) => {
-    setCurrentTab(newValue);
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % experienceData.length);
   };
+
+  const prevSlide = () => {
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + experienceData.length) % experienceData.length
+    );
+  };
+
+  const isNextDisabled = currentIndex + 1 >= experienceData.length;
+  const isPrevDisabled = currentIndex === 0;
   return (
     <>
-      <Box>
-        <button className="button" data-text="Experience">
-          <span className="">&nbsp;experience&nbsp;</span>
-        </button>
-        <Tabs
-          value={currentTab}
-          onChange={handleChangeTab}
-          textColor="inherit"
-          variant="scrollable"
-          scrollButtons
-          allowScrollButtonsMobile
-        >
-          {experienceData.map((item, index) => {
-            return (
-              <Tab
-                sx={{ color: "white" }}
-                key={index}
-                label={item.title}
-                {...a11yProps(index)}
-              />
-            );
-          })}
-        </Tabs>
-      </Box>
+      <button className="button z-0" data-text="Experience">
+        <span className="">&nbsp;experience&nbsp;</span>
+      </button>
 
-      {experienceData.map((item, index) => {
+      {experienceData.slice(currentIndex, currentIndex + 1).map((item) => {
         return (
-          <Box key={index} sx={{ mt: 3 }}>
-            <CustomTabPanel value={currentTab} index={index}>
-              <div className="flex my-2 items-start">
-                <Business fontSize="small" className="mr-2" />
-                <Typography variant="body1">{item.company}</Typography>
-              </div>
-              <div className="flex my-2 items-start">
-                <CalendarMonth fontSize="small" className="mr-2" />
-                <Typography variant="body2">{item.duration}</Typography>
-              </div>
-              <div className="flex my-2 items-start">
-                <LocationOn fontSize="small" className="mr-2" />
-                <Typography variant="body2">{item.address}</Typography>
-              </div>
-              <Typography variant="body2">{item.describe}</Typography>
-              <Typography className="mt-2" variant="h6">
-                Personal contributions:
-              </Typography>
-              {item.contributions.map((contribution, index) => {
-                return (
-                  <div key={index} className="flex items-start my-2">
-                    <Check color="success" fontSize="small" className="mr-1" />
-                    <Typography variant="body2">
-                      {contribution.describe}
-                    </Typography>
-                  </div>
-                );
-              })}
-            </CustomTabPanel>
-          </Box>
+          <div key={item.id} className="m-3 md:mx-10">
+            <div className="flex items-start mt-3">
+              <Business fontSize="small" />
+              <p className="text-sm md:text-lg mx-2">{item.company}</p>
+            </div>
+            <div className="flex my-2 items-start">
+              <PositionIcon />
+              <p className="text-sm md:text-lg mx-2">{item.role}</p>
+            </div>
+            <div className="flex my-2 items-start">
+              <CalendarMonth fontSize="small" />
+              <p className="text-sm md:text-lg mx-2">{item.duration}</p>
+            </div>
+            <div className="flex my-2 items-start">
+              <LocationOn fontSize="small" />
+              <p className="text-sm md:text-lg mx-2">{item.address}</p>
+            </div>
+            <p className="text-sm md:text-lg">{item.describe}</p>
+            <Typography className="mt-2" variant="h6">
+              Personal contributions:
+            </Typography>
+            {item.contributions.map((contribution, index) => {
+              return (
+                <div key={index} className="flex items-start my-2">
+                  <Check color="success" fontSize="small" className="mr-1" />
+                  <p className="text-sm md:text-lg mx-2">
+                    {contribution.describe}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
         );
       })}
+      <div className="flex justify-end items-center">
+        <IconButton
+          title="Previous"
+          className={`${
+            isPrevDisabled ? "cursor-not-allowed z-0 mx-[2px]" : "z-0 mx-[2px]"
+          } `}
+          onClick={prevSlide}
+        >
+          <PreviousIcon />
+        </IconButton>
+        <IconButton
+          title="Next"
+          className={`${
+            isNextDisabled ? "cursor-not-allowed z-0 mx-[2px]" : "z-0 mx-[2px]"
+          }`}
+          onClick={nextSlide}
+        >
+          <NextIcon />
+        </IconButton>
+      </div>
     </>
   );
 }

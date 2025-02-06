@@ -29,31 +29,9 @@ export const navLinks = [
 export const experienceData = [
   {
     id: 1,
-    title: "Fullstack Developement Intern",
-    company: "BOOSTECH DIGITAL TRANSFORMATION PLATFORM COMPANY LIMITED",
-    duration: "07/2024 - 10/2024",
-    address: "No. 27 Street 8, Binh Chanh District, Ho Chi Minh city, Vietnam.",
-    describe:
-      "Cooperate with other developers, testers to develop company application. Using technologies: Spring Boot, Next.js, React.js, Material UI, Flutter, RESTful APIs.",
-    contributions: [
-      { id: 1, describe: "Design, analyze databases and processing flows." },
-      {
-        id: 2,
-        describe:
-          "Design the APIs for the Management Warehouse Application by using Spring Boot and consume them on website and mobile application by using Next.js and Flutter",
-      },
-      {
-        id: 3,
-        describe:
-          "List test cases and check them before the tester implements their role. If they find errors, resolve them as soon as possible",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "Frontend Developement Intern",
     company: "TURBO TECHNOLOGY SOLUTION JOINT STOCK COMPANY",
     duration: "04/2024 - 07/2024",
+    role: "Frontend Developement Intern",
     address:
       "No. 10 Pho Quang Street, Tan Binh Ward, Ho Chi Minh city, Vietnam",
     describe:
@@ -68,6 +46,28 @@ export const experienceData = [
         id: 2,
         describe:
           "Support sales team to design the demo versions for customers.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    company: "BOOSTECH DIGITAL TRANSFORMATION PLATFORM COMPANY LIMITED",
+    duration: "07/2024 - 10/2024",
+    role: "Fullstack Developement Intern",
+    address: "No. 27 Street 8, Binh Chanh District, Ho Chi Minh city, Vietnam.",
+    describe:
+      "Cooperate with other developers, testers to develop company application. Using technologies: Spring Boot, Next.js, React.js, Material UI, Flutter, RESTful APIs.",
+    contributions: [
+      { id: 1, describe: "Design, analyze databases and processing flows." },
+      {
+        id: 2,
+        describe:
+          "Design the APIs for the Management Warehouse Application by using Spring Boot and consume them on website and mobile application by using Next.js and Flutter",
+      },
+      {
+        id: 3,
+        describe:
+          "List test cases and check them before the tester implements their role. If they find errors, resolve them as soon as possible",
       },
     ],
   },

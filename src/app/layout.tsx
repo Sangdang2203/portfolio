@@ -25,11 +25,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header>
+        <header className="z-50">
           <HeaderComponent />
         </header>
 
-        <Container className="z-0">{children}</Container>
+        <Container>{children}</Container>
 
         <footer id="contact" className="flex justify-center my-10">
           <FooterComponent />

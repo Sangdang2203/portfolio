@@ -10,7 +10,6 @@ export default function BackButton() {
       const timeElapsed = currentTime - startTime;
       const progress = Math.min(timeElapsed / duration, 1);
 
-      // Calculating new scroll position 
       const newScrollTop = start * (1 - progress);
       window.scrollTo(0, newScrollTop);
 
@@ -22,21 +21,22 @@ export default function BackButton() {
     requestAnimationFrame(scrollStep);
   }
   return (
-    <>
-      <IconButton onClick={() => scrollToTop(200)}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1em"
-          height="1em"
-          viewBox="0 0 16 16"
-          className="text-white w-8 h-8  hover:text-yellow-500"
-        >
-          <path
-            fill="currentColor"
-            d="M7.823 1.677L4.927 4.573A.25.25 0 0 0 5.104 5H7.25v3.236a.75.75 0 1 0 1.5 0V5h2.146a.25.25 0 0 0 .177-.427L8.177 1.677a.25.25 0 0 0-.354 0M13.75 11a.75.75 0 0 0 0 1.5h.5a.75.75 0 0 0 0-1.5zm-3.75.75a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75M7.75 11a.75.75 0 0 0 0 1.5h.5a.75.75 0 0 0 0-1.5zM4 11.75a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75M1.75 11a.75.75 0 0 0 0 1.5h.5a.75.75 0 0 0 0-1.5z"
-          />
-        </svg>
-      </IconButton>
-    </>
+    <IconButton
+      onClick={() => scrollToTop(500)}
+      title="Back To Top"
+      className="hover:bg-yellow-600 duration-500"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="#ffffff"
+          d="M11 18V9.75L7.75 13L7 12.34l4.5-4.5l4.5 4.5l-.75.66L12 9.75V18zm.5-15a9.5 9.5 0 0 1 9.5 9.5a9.5 9.5 0 0 1-9.5 9.5A9.5 9.5 0 0 1 2 12.5A9.5 9.5 0 0 1 11.5 3m0 1A8.5 8.5 0 0 0 3 12.5a8.5 8.5 0 0 0 8.5 8.5a8.5 8.5 0 0 0 8.5-8.5A8.5 8.5 0 0 0 11.5 4"
+        />
+      </svg>
+    </IconButton>
   );
 }
