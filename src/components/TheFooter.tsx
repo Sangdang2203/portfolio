@@ -15,6 +15,7 @@ export default function FooterComponent() {
                 href={item.path}
                 className="mx-2"
                 target="_blank"
+                title={item.name}
               >
                 {item.icon}
               </Link>

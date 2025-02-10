@@ -14,13 +14,15 @@ export default function IntroComponent() {
   return (
     <div className="my-5 z-0">
       <h3 className="text-lg md:text-[2rem]">Hello, I am</h3>
-      <Typography
-        variant="h6"
-        className="uppercase ease-linear duration-500 cursor-pointer py-2 md:py-6 hover:text-red-900 "
-      >
-        <strong className="text-xl md:text-3xl">dang van sang</strong>
-        <span className="capitalize mx-3 text-xl md:text-3xl">(Jonathan)</span>
-      </Typography>
+      <div className="flex items-center">
+        <Typography
+          variant="h6"
+          className="uppercase ease-linear duration-500 cursor-pointer py-2 md:py-6 hover:text-red-900 "
+        >
+          <strong className="text-xl md:text-3xl">dang van sang</strong>
+        </Typography>
+        <p className="capitalize mx-3 text-xl md:text-3xl">(Jonathan)</p>
+      </div>
       <Typography className="text-sm md:text-[1.5rem]">
         I&apos;m a full stack developer.
       </Typography>
