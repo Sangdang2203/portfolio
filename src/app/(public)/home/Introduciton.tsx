@@ -43,29 +43,16 @@ export default function IntroComponent() {
       {showSummary && (
         <div id="summary" className="mt-2 text-sm md:text-lg md:mt-4">
           <Typography className="py-2 md:py-4">
-            As a software engineer, I have a solid understanding of React.js,
-            Next.js, along with experience working with Java, ASP.NET and PHP.
+            As a software engineer, I have a solid understanding of React.js and
+            Next.js, along with experience working with Java, ASP.NET Web APIs.
           </Typography>
           <Typography>
-            My short-term goal is to enhance skills in full-stack development,
-            while my long-term aspiration is to move into leadership positions
-            like team leader or project manager to contribute to the
-            company&apos;s success.
+            In the next two years, I will develop my full-stack skills. My
+            long-term goal is achieving a team leader position within the next
+            five years, where I can apply my leadership and technical skills to
+            enhance team performance and contribute to the sustainable success
+            of the organization.
           </Typography>
-          <div className="mt-3">
-            <Typography variant="body1" className="capitalize">
-              strengths
-            </Typography>
-            <hr className="max-w-[70px]" />
-            <Typography>
-              Communication Skill - Build relationships, resolve conflicts and
-              work effectively in teams.
-            </Typography>
-            <Typography>
-              Analytical and ProblemSolving Skills - Used problem-solving skills
-              to debug and enhance applications.
-            </Typography>
-          </div>
         </div>
       )}
     </div>
