@@ -48,12 +48,13 @@ export const experienceData = [
           "Support sales team to design the demo versions for customers.",
       },
     ],
+    deployed_link: "https://ecocloudvn.vercel.app/",
   },
   {
     id: 2,
     company: "BOOSTECH DIGITAL TRANSFORMATION PLATFORM COMPANY LIMITED",
     duration: "07/2024 - 10/2024",
-    role: "Fullstack Developement Intern",
+    role: "Full-stack Developer",
     address: "No. 27 Street 8, Binh Chanh District, Ho Chi Minh city, Vietnam.",
     describe:
       "Cooperate with other developers, testers to develop company application. Using technologies: Spring Boot, Next.js, React.js, Material UI, Flutter, RESTful APIs.",
@@ -70,6 +71,7 @@ export const experienceData = [
           "List test cases and check them before the tester implements their role. If they find errors, resolve them as soon as possible",
       },
     ],
+    deployed_link: "",
   },
 ];
 
