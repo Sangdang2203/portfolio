@@ -128,6 +128,7 @@ export default function ProjectComponent() {
       <div className="flex justify-end items-center">
         <IconButton
           title="Previous"
+          disabled={isPrevDisabled}
           className={`${
             isPrevDisabled ? "cursor-not-allowed z-0 mx-[2px]" : "z-0 mx-[2px]"
           } `}
@@ -137,6 +138,7 @@ export default function ProjectComponent() {
         </IconButton>
         <IconButton
           title="Next"
+          disabled={isNextDisabled}
           className={`${
             isNextDisabled ? "cursor-not-allowed z-0 mx-[2px]" : "z-0 mx-[2px]"
           }`}

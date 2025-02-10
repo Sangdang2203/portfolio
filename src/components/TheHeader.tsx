@@ -19,7 +19,7 @@ export const social_media = [
     path: "https://www.linkedin.com/in/dang-van-sang/",
     icon: <LinkedIn />,
   },
-  { name: "Twister", path: "", icon: <Tiktok /> },
+  { name: "Tiktok", path: "", icon: <Tiktok /> },
 ];
 
 export default function HeaderComponent() {
