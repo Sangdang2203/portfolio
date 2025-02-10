@@ -52,11 +52,15 @@ export default function WorkingExperienceComponent() {
               <CalendarMonth fontSize="small" />
               <p className="text-sm md:text-lg mx-2">{item.duration}</p>
             </div>
-            <div>
+            <div className="flex my-2 items-start">
               {item.deployed_link ? <LinkIcon /> : ""}
               <p>
                 {item.deployed_link ? (
-                  <Link href={item.deployed_link} target="_blank">
+                  <Link
+                    href={item.deployed_link}
+                    target="_blank"
+                    className="text-sm md:text-lg mx-2"
+                  >
                     {item.deployed_link}
                   </Link>
                 ) : (

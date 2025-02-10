@@ -28,29 +28,6 @@ export const navLinks = [
 
 export const experienceData = [
   {
-    id: 1,
-    company: "TURBO TECHNOLOGY SOLUTION JOINT STOCK COMPANY",
-    duration: "04/2024 - 07/2024",
-    role: "Frontend Developement Intern",
-    address:
-      "No. 10 Pho Quang Street, Tan Binh Ward, Ho Chi Minh city, Vietnam",
-    describe:
-      "Cooperate with backend team to improve company websites. Using technologies: Next.js, React.js, Material UI, RESTful APIs",
-    contributions: [
-      {
-        id: 1,
-        describe:
-          "Design new website interfaces and admin dashboard by using Next.js, RESTful API, Material UI for improving the UI/UX.",
-      },
-      {
-        id: 2,
-        describe:
-          "Support sales team to design the demo versions for customers.",
-      },
-    ],
-    deployed_link: "https://ecocloudvn.vercel.app/",
-  },
-  {
     id: 2,
     company: "BOOSTECH DIGITAL TRANSFORMATION PLATFORM COMPANY LIMITED",
     duration: "07/2024 - 10/2024",
@@ -72,6 +49,29 @@ export const experienceData = [
       },
     ],
     deployed_link: "",
+  },
+  {
+    id: 2,
+    company: "TURBO TECHNOLOGY SOLUTION JOINT STOCK COMPANY",
+    duration: "04/2024 - 07/2024",
+    role: "Frontend Developement Intern",
+    address:
+      "No. 10 Pho Quang Street, Tan Binh Ward, Ho Chi Minh city, Vietnam",
+    describe:
+      "Cooperate with backend team to improve company websites. Using technologies: Next.js, React.js, Material UI, RESTful APIs",
+    contributions: [
+      {
+        id: 1,
+        describe:
+          "Design new website interfaces and admin dashboard by using Next.js, RESTful API, Material UI for improving the UI/UX.",
+      },
+      {
+        id: 2,
+        describe:
+          "Support sales team to design the demo versions for customers.",
+      },
+    ],
+    deployed_link: "https://ecocloudvn.vercel.app",
   },
 ];
 
