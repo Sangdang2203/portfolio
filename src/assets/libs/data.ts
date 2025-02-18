@@ -258,7 +258,7 @@ export const skillData = [
     id: 1,
     title: "Frontend ",
     description:
-      "RESTful API, React.js, Next.js, TypeScript, JavaScript, Material UI, Ant Design, Bootstrap 5, TailwindCSS, HTLM5, CSS, Responsive Design",
+      "React.js, Next.js, TypeScript, JavaScript, Material UI, Ant Design, Bootstrap 5, TailwindCSS, HTLM5, CSS, Responsive Design, RESTful APIs",
     image: "frontend.png",
   },
   {

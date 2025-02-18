@@ -4,7 +4,7 @@ import { CheckCircleOutline } from "@mui/icons-material";
 export default function TechnicalSkillComponent() {
   return (
     <div className="z-0">
-      <button className="button" data-text="Project">
+      <button className="button" data-text="">
         <span className="">&nbsp;technical skills&nbsp;</span>
       </button>
       <div>

@@ -24,7 +24,7 @@ export default function IntroComponent() {
         <p className="capitalize mx-3 text-xl md:text-3xl">(Jonathan)</p>
       </div>
       <Typography className="text-sm md:text-[1.5rem]">
-        I&apos;m a full stack developer.
+        I&apos;m a full-stack developer.
       </Typography>
 
       {!hidden && (
@@ -45,15 +45,19 @@ export default function IntroComponent() {
       {showSummary && (
         <div id="summary" className="mt-2 text-sm md:text-lg md:mt-4">
           <Typography className="py-2 md:py-4">
-            As a software engineer, I have a solid understanding of React.js and
-            Next.js, along with experience working with Java, ASP.NET Web APIs.
+            As a software engineer, I possess a strong proficiency in React.js
+            and Next.js, complemented by experience in Java and ASP.NET Web
+            APIs.
           </Typography>
           <Typography>
-            In the next two years, I will develop my full-stack skills. My
-            long-term goal is achieving a team leader position within the next
-            five years, where I can apply my leadership and technical skills to
-            enhance team performance and contribute to the sustainable success
-            of the organization.
+            Over the next two years, I aim to further develop my full-stack
+            skills, enhancing my versatility as a developer. My long-term
+            aspiration is to attain a team leader position within the next five
+            years, where I can leverage my leadership and technical expertise to
+            elevate team performance and contribute to the sustainable success
+            of the organization. As a software engineer, I have a solid
+            understanding of React.js and Next.js, along with experience working
+            with Java, ASP.NET Web APIs.
           </Typography>
         </div>
       )}
