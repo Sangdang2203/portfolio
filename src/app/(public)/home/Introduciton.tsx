@@ -43,7 +43,7 @@ export default function IntroComponent() {
       )}
 
       {showSummary && (
-        <div id="summary" className="mt-2 md:mt-4 text-justify">
+        <div id="summary" className="mt-2 md:mt-4">
           <Typography className="py-2 text-sm md:text-lg md:py-4 ">
             As a software engineer, I possess a strong proficiency in React.js
             and Next.js, complemented by experience in Java and ASP.NET Web
