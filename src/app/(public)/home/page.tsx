@@ -10,11 +10,11 @@ export default function HomePage() {
   return (
     <>
       <div>
-        <div id="intro" className="w-full grid grid-col-1 md:grid-cols-2">
+        <div id="intro" className="w-full grid grid-col-1 lg:grid-cols-2">
           <div className="my-5">
             <IntroComponent />
           </div>
-          <div className="flex justify-center md:flex md:justify-end">
+          <div className="flex justify-center lg:flex lg:justify-end">
             <AvatarComponent />
           </div>
         </div>

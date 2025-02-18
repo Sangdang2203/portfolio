@@ -13,17 +13,17 @@ export default function IntroComponent() {
   };
   return (
     <div className="my-5 z-0">
-      <h3 className="text-lg md:text-[2rem]">Hello, I am</h3>
+      <h3 className="text-sm md:text-lg">Hello, I am</h3>
       <div className="flex items-center">
         <Typography
           variant="h6"
           className="uppercase ease-linear duration-500 cursor-pointer py-2 md:py-6 hover:text-red-900 "
         >
-          <strong className="text-xl md:text-3xl">dang van sang</strong>
+          <strong className="text-lg md:text-2xl">dang van sang</strong>
         </Typography>
-        <p className="capitalize mx-3 text-xl md:text-3xl">(Jonathan)</p>
+        <p className="capitalize mx-3 text-lg md:text-2xl">(Jonathan)</p>
       </div>
-      <Typography className="text-sm md:text-[1.5rem]">
+      <Typography className="text-sm md:text-lg">
         I&apos;m a full-stack developer.
       </Typography>
 
@@ -43,13 +43,13 @@ export default function IntroComponent() {
       )}
 
       {showSummary && (
-        <div id="summary" className="mt-2 text-sm md:text-lg md:mt-4">
-          <Typography className="py-2 md:py-4">
+        <div id="summary" className="mt-2 md:mt-4 text-justify">
+          <Typography className="py-2 text-sm md:text-lg md:py-4 ">
             As a software engineer, I possess a strong proficiency in React.js
             and Next.js, complemented by experience in Java and ASP.NET Web
             APIs.
           </Typography>
-          <Typography>
+          <Typography className="text-sm md:text-lg">
             Over the next two years, I aim to further develop my full-stack
             skills, enhancing my versatility as a developer. My long-term
             aspiration is to attain a team leader position within the next five

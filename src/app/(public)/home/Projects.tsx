@@ -39,7 +39,7 @@ export default function ProjectComponent() {
         {projectData.slice(currentIndex, currentIndex + 1).map((item) => {
           return (
             <div key={item.id} className="my-3 flex flex-col justify-between">
-              <p className="uppercase text-[2rem]">
+              <p className="uppercase text-2xl">
                 {currentIndex + 1}
                 {`. ${item.title}`}
               </p>
