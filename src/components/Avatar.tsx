@@ -8,6 +8,7 @@ export default function AvatarComponent() {
         src={Avatar}
         alt="Avatar"
         className="transition-transform duration-300 ease-in-out hover:scale-110 max-w-[300px] max-h-[300px]"
+        priority
       />
     </>
   );

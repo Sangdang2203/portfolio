@@ -50,7 +50,7 @@ export default function HeaderComponent() {
       </div>
 
       <div
-        className={`absolute top-[80px] right-0 left-0 bottom-0 z-50 bg-[#F4F4F4] w-full min-h-screen ease-in duration-70000 ${
+        className={`absolute top-[80px] right-0 left-0 bottom-0 z-50 bg-[#F4F4F4] w-full min-h-screen ease-in duration-700 ${
           navigation ? "block" : "hidden"
         }`}
       >

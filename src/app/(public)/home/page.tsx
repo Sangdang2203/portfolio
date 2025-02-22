@@ -4,12 +4,11 @@ import ProjectComponent from "./Projects";
 import TechnicalSkillComponent from "./TechnicalSkills";
 import EducationComponent from "./Education";
 import AvatarComponent from "@/components/Avatar";
-import BackButton from "@/components/BackButton";
 
 export default function HomePage() {
   return (
     <>
-      <div>
+      <div className="z-0">
         <div id="intro" className="w-full grid grid-col-1 lg:grid-cols-2">
           <div className="my-5">
             <IntroComponent />
@@ -35,10 +34,6 @@ export default function HomePage() {
             <EducationComponent />
           </div>
         </section>
-      </div>
-
-      <div className="fixed bottom-3 right-3" title="Back To Top">
-        <BackButton />
       </div>
     </>
   );
