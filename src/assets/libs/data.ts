@@ -28,7 +28,7 @@ export const navLinks = [
 
 export const experienceData = [
   {
-    id: 2,
+    id: 1,
     company: "BOOSTECH DIGITAL TRANSFORMATION PLATFORM COMPANY LIMITED",
     duration: "07/2024 - 10/2024",
     role: "Full-stack Developer",

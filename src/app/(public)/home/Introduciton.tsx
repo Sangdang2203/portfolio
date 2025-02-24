@@ -55,9 +55,7 @@ export default function IntroComponent() {
             aspiration is to attain a team leader position within the next five
             years, where I can leverage my leadership and technical expertise to
             elevate team performance and contribute to the sustainable success
-            of the organization. As a software engineer, I have a solid
-            understanding of React.js and Next.js, along with experience working
-            with Java, ASP.NET Web APIs.
+            of the organization.
           </Typography>
         </div>
       )}
