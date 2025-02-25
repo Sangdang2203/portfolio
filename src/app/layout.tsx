@@ -40,7 +40,7 @@ export default function RootLayout({
     };
   }, []);
   return (
-    <html lang="en">
+    <html lang="en" data-bs-theme="dark">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
