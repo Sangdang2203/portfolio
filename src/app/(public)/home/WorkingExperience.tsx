@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { experienceData } from "@/assets/libs/data";
+import { experienceData } from "@/data";
 import { IconButton, Typography } from "@mui/material";
 import {
   Business,

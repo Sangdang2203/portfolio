@@ -2,8 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
+import { navLinks } from "@/data";
 import { Button, Typography } from "@mui/material";
-import { navLinks } from "@/assets/libs/data";
 import CloseIcon from "@/assets/icons/CloseIcon";
 import MenuIcon from "@/assets/icons/MenuIcon";
 import { Github } from "@/assets/icons/Github";

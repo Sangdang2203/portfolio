@@ -2,7 +2,7 @@
 
 import NextIcon from "@/assets/icons/NextIcon";
 import PreviousIcon from "@/assets/icons/PreviousIcon";
-import { projectData } from "@/assets/libs/data";
+import { projectData } from "@/data";
 import {
   CalendarMonth,
   Check,

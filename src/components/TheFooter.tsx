@@ -1,12 +1,12 @@
 "use client";
 import Link from "next/link";
-import "../assets/styles/footer.css";
 import { social_media } from "./TheHeader";
+import styles from "@/app/ui/footer.module.css";
 
 export default function FooterComponent() {
   return (
     <>
-      <div className="card">
+      <div className={styles.card}>
         {social_media.length > 0 &&
           social_media.map((item) => {
             return (

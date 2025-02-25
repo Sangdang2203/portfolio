@@ -1,4 +1,4 @@
-import { certificationData } from "@/assets/libs/data";
+import { certificationData } from "@/data";
 import {
   CalendarMonth,
   LocationOn,

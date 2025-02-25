@@ -1,4 +1,4 @@
-import { skillData } from "@/assets/libs/data";
+import { skillData } from "@/data";
 import { CheckCircleOutline } from "@mui/icons-material";
 
 export default function TechnicalSkillComponent() {

@@ -1,11 +1,11 @@
 "use client";
 
-import "./globals.css";
+import React from "react";
+import "@/app/ui/globals.css";
 import localFont from "next/font/local";
+import { Container } from "@mui/material";
 import FooterComponent from "@/components/TheFooter";
 import HeaderComponent from "@/components/TheHeader";
-import { Container } from "@mui/material";
-import React from "react";
 import BackButton from "@/components/BackButton";
 
 const geistSans = localFont({
