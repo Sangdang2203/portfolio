@@ -1,4 +1,48 @@
-export const navLinks = [
+export interface Experience {
+  id: number;
+  company: string;
+  duration: string;
+  role: string;
+  address: string;
+  describe: string;
+  contributions: { id: number; describe: string }[];
+  deployed_link?: string;
+}
+
+export interface NavLink {
+  key: string;
+  label: string;
+  href: string;
+}
+export interface Project {
+  id: number;
+  title: string;
+  duration: string;
+  teamSize: number;
+  describe: string;
+  githubLinks: {
+    id: number;
+    name: string;
+    link: string;
+  }[];
+  deployedLinks: { id: number; link: string }[];
+  technologies: { id: number; name: string; description: string }[];
+  contributions: { id: number; describe: string }[];
+}
+
+export interface Skill {
+  id: number;
+  title: string;
+  description: string;
+}
+
+export interface Certificate {
+  id: number;
+  title: string;
+  describe: string;
+}
+
+export const navLinks: NavLink[] = [
   {
     key: "experience",
     label: "experience",
@@ -26,7 +70,7 @@ export const navLinks = [
   },
 ];
 
-export const experienceData = [
+export const experienceData: Experience[] = [
   {
     id: 1,
     company: "BOOSTECH DIGITAL TRANSFORMATION PLATFORM COMPANY LIMITED",
@@ -75,7 +119,7 @@ export const experienceData = [
   },
 ];
 
-export const projectData = [
+export const projectData: Project[] = [
   {
     id: 1,
     title: "eSavior",
@@ -253,37 +297,33 @@ export const projectData = [
   },
 ];
 
-export const skillData = [
+export const skillData: Skill[] = [
   {
     id: 1,
     title: "Frontend ",
     description:
       "React.js, Next.js, TypeScript, JavaScript, Material UI, Ant Design, Bootstrap 5, TailwindCSS, HTLM5, CSS, Responsive Design, RESTful APIs",
-    image: "frontend.png",
   },
   {
     id: 2,
     title: "Backend ",
     description:
       "Java, Spring Boot, Spring Frameworks, Design APIs, Mapper, DTO, ORM",
-    image: "backend.png",
   },
   {
     id: 3,
     title: "Database",
     description: "SQL Server, MySQL, PostgreSQL",
-    image: "database.png",
   },
   {
     id: 4,
     title: "Others",
     description:
       "Github Desktop, Git, Postman, Debugging code, Intellij Idea, Visual Studio Code.",
-    image: "",
   },
 ];
 
-export const certificationData = [
+export const certificationData: Certificate[] = [
   {
     id: 1,
     title: "Advanced Diploma In Software Engineering",

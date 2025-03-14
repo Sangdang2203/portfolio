@@ -1,7 +1,7 @@
 "use client";
 
-import NextIcon from "@/assets/icons/NextIcon";
-import PreviousIcon from "@/assets/icons/PreviousIcon";
+import React from "react";
+import Link from "next/link";
 import { projectData } from "@/data";
 import {
   CalendarMonth,
@@ -10,25 +10,11 @@ import {
   People,
   LanguageRounded,
 } from "@mui/icons-material";
-import { IconButton, Typography } from "@mui/material";
-import Link from "next/link";
-import React from "react";
+import { Typography } from "@mui/material";
+import CarouselComponent from "@/components/Carousel";
 
 export default function ProjectComponent() {
   const [currentIndex, setCurrentIndex] = React.useState(0);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % projectData.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + projectData.length) % projectData.length
-    );
-  };
-
-  const isNextDisabled = currentIndex + 1 >= projectData.length;
-  const isPrevDisabled = currentIndex === 0;
   return (
     <>
       <button className="button z-0" data-text="Project">
@@ -39,10 +25,7 @@ export default function ProjectComponent() {
         {projectData.slice(currentIndex, currentIndex + 1).map((item) => {
           return (
             <div key={item.id} className="my-3 flex flex-col justify-between">
-              <p className="uppercase text-2xl">
-                {currentIndex + 1}
-                {`. ${item.title}`}
-              </p>
+              <h3 className="uppercase text-2xl">{item.title}</h3>
               <div className="flex my-2 items-start">
                 <CalendarMonth fontSize="small" className="mr-2" />
                 <p className="text-sm md:text-lg">{item.duration}</p>
@@ -125,28 +108,11 @@ export default function ProjectComponent() {
           );
         })}
       </div>
-      <div className="flex justify-end items-center">
-        <IconButton
-          title="Previous"
-          disabled={isPrevDisabled}
-          className={`${
-            isPrevDisabled ? "cursor-not-allowed z-0 mx-[2px]" : "z-0 mx-[2px]"
-          } `}
-          onClick={prevSlide}
-        >
-          <PreviousIcon />
-        </IconButton>
-        <IconButton
-          title="Next"
-          disabled={isNextDisabled}
-          className={`${
-            isNextDisabled ? "cursor-not-allowed z-0 mx-[2px]" : "z-0 mx-[2px]"
-          }`}
-          onClick={nextSlide}
-        >
-          <NextIcon />
-        </IconButton>
-      </div>
+      <CarouselComponent
+        data={projectData}
+        currentIndex={currentIndex}
+        setCurrentIndex={setCurrentIndex}
+      />
     </>
   );
 }

@@ -10,7 +10,7 @@ export default function TechnicalSkillComponent() {
       <div>
         {skillData.map((skill) => {
           return (
-            <div key={skill.id} className="my-2 flex items-start">
+            <div key={skill.id} className="my-5 flex items-start">
               <CheckCircleOutline
                 color="success"
                 fontSize="medium"

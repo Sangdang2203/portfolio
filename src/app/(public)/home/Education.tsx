@@ -11,7 +11,7 @@ import { Box, Typography } from "@mui/material";
 export default function EducationComponent() {
   return (
     <>
-      <button className="button" data-text="Experience">
+      <button className="button" data-text="Education">
         <span className="">&nbsp;education&nbsp;</span>
       </button>
       <Box m={2}>
