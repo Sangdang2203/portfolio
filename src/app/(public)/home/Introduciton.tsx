@@ -14,7 +14,7 @@ export default function IntroComponent() {
   };
   return (
     <>
-      <div className="my-5 z-0 text-justify">
+      <div className="my-5">
         <h3 className="text-sm md:text-lg">Hello, I am</h3>
         <div className="flex items-center">
           <Typography
