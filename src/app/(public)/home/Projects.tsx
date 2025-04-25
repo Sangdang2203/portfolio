@@ -7,7 +7,6 @@ import {
   CalendarMonth,
   Check,
   GitHub,
-  People,
   LanguageRounded,
 } from "@mui/icons-material";
 import { Typography } from "@mui/material";
@@ -41,9 +40,8 @@ export default function ProjectComponent() {
                   {item.githubLinks.length > 0 &&
                     item.githubLinks.map((link) => {
                       return (
-                        <div>
+                        <div key={link.id}>
                           <Link
-                            key={link.id}
                             href={link.link}
                             className="text-sm md:text-lg"
                             target="_blank"

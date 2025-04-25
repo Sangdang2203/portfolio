@@ -52,7 +52,7 @@ export default function IntroComponent() {
               to enhance my full-stack capabilities over the next two years. My
               five-year goal is to leverage my technical expertise and
               leadership skills as a team leader, driving team performance and
-              contributing to the organization's success.
+              contributing to the organization&apos;s success.
             </Typography>
           </div>
         )}
