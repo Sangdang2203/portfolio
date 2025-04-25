@@ -27,7 +27,8 @@ export interface Project {
   }[];
   deployedLinks: { id: number; link: string }[];
   technologies: { id: number; name: string; description: string }[];
-  contributions: { id: number; describe: string }[];
+  contributions: string;
+  // contributions: { id: number; describe: string }[];
 }
 
 export interface Skill {
@@ -40,6 +41,7 @@ export interface Certificate {
   id: number;
   title: string;
   describe: string;
+  link: string;
 }
 
 export const navLinks: NavLink[] = [
@@ -122,6 +124,25 @@ export const experienceData: Experience[] = [
 export const projectData: Project[] = [
   {
     id: 1,
+    title: "Luxury Real Estate",
+    duration: "02/2025 - Present",
+    teamSize: 1,
+    describe: "",
+    githubLinks: [],
+    deployedLinks: [{ id: 1, link: "https://sunny-realestate.vercel.app" }],
+    technologies: [
+      {
+        id: 1,
+        name: "Frontend",
+        description:
+          "Next.js, React.js, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS.",
+      },
+    ],
+    contributions:
+      "Property listings with rich details, images, and location data; advanced search capabilities; dedicated property detail pages; responsive design; reusable React.js UI components styled with Tailwind CSS; modern JavaScript (TypeScript, Next.js) for performance and maintainability, leveraging SSG/SSR for optimized loading and SEO; a potential contact form; image optimization; intuitive navigation; and interactive JavaScript elements.",
+  },
+  {
+    id: 2,
     title: "eSavior",
     duration: "09/2024 - 10/2024",
     teamSize: 5,
@@ -139,27 +160,11 @@ export const projectData: Project[] = [
       },
       { id: 3, name: "Database", description: "Firebase" },
     ],
-    contributions: [
-      { id: 1, describe: "Design and optimize the APIs." },
-      {
-        id: 2,
-        describe:
-          "Build admin dashboard: Manage nursing list, list of appointments and home care services. Administrators can implement features such as create, update, delete, filter through some specific fields.",
-      },
-      {
-        id: 3,
-        describe:
-          "Build the procedure for scheduling home care on the phone application for users. After using home care services, users can rate for the nurse.",
-      },
-      {
-        id: 4,
-        describe:
-          "Build the process of confirming the home care schedule that the user has booked. This is only for the nurse account",
-      },
-    ],
+    contributions:
+      "Developed an admin dashboard for managing nursing lists, appointments, and home care services, featuring CRUD operations and filtering capabilities. Implemented home care scheduling and nurse rating functionality in the user phone application. Designed the confirmation workflow for booked home care schedules on nurse accounts.",
   },
   {
-    id: 2,
+    id: 3,
     title: "TARS Delivery System",
     duration: "01/2024 - 03/2024",
     teamSize: 5,
@@ -179,34 +184,11 @@ export const projectData: Project[] = [
       },
       { id: 3, name: "Database", description: "SQL Server" },
     ],
-    contributions: [
-      {
-        id: 1,
-        describe:
-          "Design and optimize the APIs for efficient communication between the front-end and backend, reducing load times.",
-      },
-      {
-        id: 2,
-        describe: "Performing authorization for users.",
-      },
-      {
-        id: 3,
-        describe: "Build manager dashboard: Manage employees in their branch.",
-      },
-      {
-        id: 4,
-        describe:
-          "Build admin dashboard: Manage employees, manage users, manage and handle updating requests from employees.",
-      },
-      {
-        id: 5,
-        describe:
-          "Build employee dashboard: Manage their personal information: can update their information, review history logs.",
-      },
-    ],
+    contributions:
+      "Implemented user authorization. Developed manager, admin, and employee dashboards for branch employee management, user and update request management, and personal information management with update and history log review, respectively.",
   },
   {
-    id: 3,
+    id: 4,
     title: "NZ Shop",
     duration: "08/2023 - 10/2023",
     teamSize: 4,
@@ -226,31 +208,11 @@ export const projectData: Project[] = [
       },
       { id: 3, name: "Database", description: "MySQL" },
     ],
-    contributions: [
-      {
-        id: 1,
-        describe:
-          "Design and optimize the APIs for efficient communication between the front-end and backend, reducing load times.",
-      },
-      {
-        id: 2,
-        describe:
-          "Build product detail page: User can view product details, product promotion, comments.",
-      },
-      {
-        id: 3,
-        describe:
-          "Build admin dashboard (CRUD): post management, product management, page management, slider management.",
-      },
-      {
-        id: 4,
-        describe:
-          "Combine chat GPT for composing product description when the administrator add new products into the list.",
-      },
-    ],
+    contributions:
+      "Develop a product detail page with user views for product information, promotions, and comments. Implement an admin dashboard with CRUD functionality for posts, products, pages, and sliders. Integrate ChatGPT for automated product description generation during product creation. Design and optimize APIs for efficient front-end/back-end communication and reduced load times.",
   },
   {
-    id: 4,
+    id: 5,
     title: "Chic Lighting",
     duration: "01/2023 - 02/2023",
     teamSize: 1,
@@ -266,34 +228,8 @@ export const projectData: Project[] = [
         description: "HTML5, CSS, JavaScript, AngularJS, Bootstrap 5.",
       },
     ],
-    contributions: [
-      {
-        id: 1,
-        describe:
-          "Built Homepage, Product Detail Page, Contact Page, Gallery Page, About Us Page",
-      },
-      {
-        id: 2,
-        describe: "Built functions: login, register account",
-      },
-      {
-        id: 3,
-        describe:
-          "Filtering function: filter products through product's branch.",
-      },
-      {
-        id: 4,
-        describe: "Searching function: search products through product's name.",
-      },
-      {
-        id: 5,
-        describe: "Built counting visitor function.",
-      },
-      {
-        id: 6,
-        describe: "Improve the user interface and user experience.",
-      },
-    ],
+    contributions:
+      "Developed the Homepage, Product Detail Page, Contact Page, Gallery Page, and About Us Page. Implemented login and account registration, product filtering by branch, product searching by name, and a visitor counter. Improved the user interface and user experience.",
   },
 ];
 
@@ -329,10 +265,12 @@ export const certificationData: Certificate[] = [
     title: "Advanced Diploma In Software Engineering",
     describe:
       "Completed a certification course provided by FPT Academy International (FAI).",
+    link: "https://drive.google.com/file/d/1rm4KBWWesvEhRjHowB8wYz_e6OduiB7W/view?usp=drive_link",
   },
   {
     id: 2,
     title: "Managing an Agile Team",
     describe: "Completed a certification course provided by Coursera.",
+    link: "",
   },
 ];

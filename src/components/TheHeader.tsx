@@ -42,52 +42,43 @@ export default function HeaderComponent() {
             &nbsp;portfolio&nbsp;
           </span>
         </Button>
-        <div className="block md:flex items-center" onClick={handleNavigation}>
-          <div className="w-[35.36px] h-[85.71px] hover:opacity-80 cursor-pointer z-50">
+
+        <div
+          className="z-50 flex items-center text-[#fff]"
+          onClick={handleNavigation}
+        >
+          <Typography
+            variant="body1"
+            className="hidden md:block uppercase cursor-pointer font-medium"
+          >
+            menu
+          </Typography>
+          <div className="block w-[35.36px] h-[85.71px] hover:opacity-80 cursor-pointer z-50 mr-4">
             {navigation ? <CloseIcon /> : <MenuIcon />}
           </div>
         </div>
       </div>
 
       <div
-        className={`absolute top-[80px] right-0 left-0 bottom-0 z-50 bg-[#F4F4F4] w-full min-h-screen ease-in duration-700 ${
+        className={`absolute top-[80px] right-0 left-0 bottom-0 bg-[#F4F4F4] w-full min-h-screen ease-in duration-300 z-50 ${
           navigation ? "block" : "hidden"
         }`}
       >
-        <div className="grid grid-cols-2 md:grid-cols-5 max-w-[669px] h-[295px]">
-          <div className="flex flex-col px-[64px] py-[32px]">
-            {navLinks.length > 0 &&
-              navLinks.map((link) => (
+        <div className="grid grid-cols-1 md:grid-cols-5">
+          {navLinks.length > 0 &&
+            navLinks.map((link) => (
+              <div key={link.key}>
                 <Link
-                  key={link.key}
                   href={link.href}
-                  className="text-[#7D614B] w-[315px] h-[77px]"
+                  className="text-[#7D614B] text-center p-5 md:p-10"
                   onClick={closeNavigation}
                 >
-                  <Typography
-                    variant="body1"
-                    className="capitalize font-semibold"
-                  >
+                  <Typography className="text-sm md:text-lg uppercase font-semibold hover:pl-3 ease-linear duration-200">
                     {link.label}
                   </Typography>
                 </Link>
-              ))}
-          </div>
-        </div>
-        <div className="w-full fixed bottom-0 right-0 bg-white py-2 hidden md:flex justify-end items-end">
-          {social_media.length > 0 &&
-            social_media.map((item) => {
-              return (
-                <Link
-                  key={item.name}
-                  href={item.path}
-                  className="mx-2"
-                  target="_blank"
-                >
-                  {item.icon}
-                </Link>
-              );
-            })}
+              </div>
+            ))}
         </div>
       </div>
     </nav>

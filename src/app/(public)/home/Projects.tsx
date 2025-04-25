@@ -30,12 +30,7 @@ export default function ProjectComponent() {
                 <CalendarMonth fontSize="small" className="mr-2" />
                 <p className="text-sm md:text-lg">{item.duration}</p>
               </div>
-              <div className="flex my-2 items-start">
-                <People fontSize="small" className="mr-2" />
-                <p className="text-sm md:text-lg">
-                  {item.teamSize + " members"}
-                </p>
-              </div>
+
               <div className="flex my-2 items-start">
                 {item.githubLinks.length > 0 ? (
                   <GitHub fontSize="small" className="mr-2" />
@@ -46,14 +41,16 @@ export default function ProjectComponent() {
                   {item.githubLinks.length > 0 &&
                     item.githubLinks.map((link) => {
                       return (
-                        <Link
-                          key={link.id}
-                          href={link.link}
-                          className="text-sm md:text-lg"
-                          target="_blank"
-                        >
-                          {link.name + ": " + link.link}
-                        </Link>
+                        <div>
+                          <Link
+                            key={link.id}
+                            href={link.link}
+                            className="text-sm md:text-lg"
+                            target="_blank"
+                          >
+                            {link.name + ": " + link.link}
+                          </Link>
+                        </div>
                       );
                     })}
                 </div>
@@ -91,19 +88,12 @@ export default function ProjectComponent() {
                   </div>
                 );
               })}
-              <Typography className="mt-2" variant="h6">
-                Personal contributions:
-              </Typography>
-              {item.contributions.map((contribution, index) => {
-                return (
-                  <div key={index} className="flex items-start my-2">
-                    <Check color="success" fontSize="small" className="mr-1" />
-                    <p className="text-sm md:text-lg">
-                      {contribution.describe}
-                    </p>
-                  </div>
-                );
-              })}
+              <div>
+                <Typography className="mt-2" variant="h6">
+                  Contributions:
+                </Typography>
+                <p className="text-sm md:text-lg">{item.contributions}</p>
+              </div>
             </div>
           );
         })}

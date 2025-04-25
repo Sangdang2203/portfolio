@@ -46,18 +46,13 @@ export default function IntroComponent() {
 
         {showSummary && (
           <div id="summary" className="mt-2 md:mt-4">
-            <Typography className="py-2 text-sm md:text-lg md:py-4 ">
-              As a software engineer, I possess a strong proficiency in React.js
-              and Next.js, complemented by experience in Java and ASP.NET Web
-              APIs.
-            </Typography>
-            <Typography className="text-sm md:text-lg">
-              Over the next two years, I aim to further develop my full-stack
-              skills, enhancing my versatility as a developer. My long-term
-              aspiration is to attain a team leader position within the next
-              five years, where I can leverage my leadership and technical
-              expertise to elevate team performance and contribute to the
-              sustainable success of the organization.
+            <Typography className="py-2 text-sm md:text-lg md:py-4">
+              As a software engineer, I have strong skills in React.js and
+              Next.js, along with experience in Java and ASP.NET Web APIs. I aim
+              to enhance my full-stack capabilities over the next two years. My
+              five-year goal is to leverage my technical expertise and
+              leadership skills as a team leader, driving team performance and
+              contributing to the organization's success.
             </Typography>
           </div>
         )}

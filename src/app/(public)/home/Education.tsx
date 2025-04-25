@@ -7,6 +7,7 @@ import {
   WorkspacePremium,
 } from "@mui/icons-material";
 import { Box, Typography } from "@mui/material";
+import Link from "next/link";
 
 export default function EducationComponent() {
   return (
@@ -50,8 +51,10 @@ export default function EducationComponent() {
                 className="mx-2"
               />
               <div>
-                <Typography variant="h6">{item.title}</Typography>
-                <p className="text-sm md:text-lg">{item.describe}</p>
+                <Link className="text-2xl" href={item.link}>
+                  {item.title}
+                </Link>
+                <p className="text-sm md:text-lg py-1">{item.describe}</p>
               </div>
             </div>
           );
