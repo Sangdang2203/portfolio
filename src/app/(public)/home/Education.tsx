@@ -6,7 +6,7 @@ import {
   Speed,
   WorkspacePremium,
 } from "@mui/icons-material";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Link from "next/link";
 
 export default function EducationComponent() {
