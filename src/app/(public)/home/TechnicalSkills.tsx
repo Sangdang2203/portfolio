@@ -1,11 +1,13 @@
-import { skillData } from "@/data";
+import { skillData } from "@/app/libs/data";
 import { CheckCircleOutline } from "@mui/icons-material";
 
 export default function TechnicalSkillComponent() {
   return (
     <div className="z-0">
       <button className="button" data-text="">
-        <span className="">&nbsp;technical skills&nbsp;</span>
+        <span className="text-green-700 font-bold">
+          &nbsp;technical skills&nbsp;
+        </span>
       </button>
       <div>
         {skillData.map((skill) => {

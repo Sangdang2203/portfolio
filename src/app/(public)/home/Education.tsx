@@ -1,4 +1,4 @@
-import { certificationData } from "@/data";
+import { certificationData } from "@/app/libs/data";
 import {
   CalendarMonth,
   LocationOn,
@@ -13,7 +13,7 @@ export default function EducationComponent() {
   return (
     <>
       <button className="button" data-text="Education">
-        <span className="">&nbsp;education&nbsp;</span>
+        <span className="text-green-700 font-bold">&nbsp;education&nbsp;</span>
       </button>
       <Box m={2}>
         <p className="text-sm md:text-lg font-semibold">Software Engineering</p>

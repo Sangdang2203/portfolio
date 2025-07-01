@@ -1,4 +1,4 @@
-import { Experience, Project } from "@/app/lib/data";
+import { Experience, Project } from "@/app/libs/types";
 import { FiberManualRecord } from "@mui/icons-material";
 import React from "react";
 
@@ -20,7 +20,7 @@ const CarouselComponent = ({ data, currentIndex, setCurrentIndex }: Props) => {
             className={`${
               currentIndex === index
                 ? "text-green-700 cursor-pointer"
-                : "text-white cursor-pointer"
+                : "text-green-200 cursor-pointer"
             }`}
           />
         ))}

@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
+import { useId, useState } from "react";
 import Link from "next/link";
-import { experienceData } from "@/data";
+import { experienceData } from "@/app/libs/data";
 import { Typography } from "@mui/material";
 import {
   Business,
@@ -15,16 +15,17 @@ import LinkIcon from "@/assets/icons/LinkIcon";
 import CarouselComponent from "@/components/Carousel";
 
 export default function WorkingExperienceComponent() {
-  const [currentIndex, setCurrentIndex] = React.useState(0);
+  const id = useId();
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
   return (
     <>
       <button className="button z-0" data-text="Experience">
-        <span className="">&nbsp;experience&nbsp;</span>
+        <span className="text-green-700 font-bold">&nbsp;experience&nbsp;</span>
       </button>
 
       {experienceData.slice(currentIndex, currentIndex + 1).map((item) => {
         return (
-          <div key={item.id} className="m-3 md:mx-10">
+          <div key={id + item.company} className="m-3 md:mx-10">
             <div className="flex items-start mt-3">
               <Business fontSize="small" />
               <p className="text-sm md:text-lg mx-2">{item.company}</p>

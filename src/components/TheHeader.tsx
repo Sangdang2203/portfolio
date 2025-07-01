@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
+import { useState } from "react";
 import Link from "next/link";
-import { navLinks } from "@/data";
+import { navLinks } from "@/app/libs/data";
 import { Button, Typography } from "@mui/material";
 import CloseIcon from "@/assets/icons/CloseIcon";
 import MenuIcon from "@/assets/icons/MenuIcon";
@@ -10,6 +10,7 @@ import { Github } from "@/assets/icons/Github";
 import { LinkedIn } from "@/assets/icons/LinkedIn";
 import { WhatsApp } from "@/assets/icons/WhatsApp";
 import { Tiktok } from "@/assets/icons/Tiktok";
+import DarkModeToggle from "./DarkMode";
 
 export const social_media = [
   { name: "WhatsApp", path: "https://wa.me/84909751772", icon: <WhatsApp /> },
@@ -23,7 +24,7 @@ export const social_media = [
 ];
 
 export default function HeaderComponent() {
-  const [navigation, setNavigation] = React.useState(false);
+  const [navigation, setNavigation] = useState<boolean>(false);
 
   const handleNavigation = () => {
     setNavigation(!navigation);
@@ -43,18 +44,21 @@ export default function HeaderComponent() {
           </span>
         </Button>
 
-        <div
-          className="z-50 flex items-center text-[#fff]"
-          onClick={handleNavigation}
-        >
-          <Typography
-            variant="body1"
-            className="hidden md:block uppercase cursor-pointer font-medium"
+        <div className="flex items-center">
+          <DarkModeToggle />
+          <div
+            className="z-50 flex items-center text-yellow-600"
+            onClick={handleNavigation}
           >
-            menu
-          </Typography>
-          <div className="block w-[35.36px] h-[85.71px] hover:opacity-80 cursor-pointer z-50 mr-4">
-            {navigation ? <CloseIcon /> : <MenuIcon />}
+            <Typography
+              variant="body1"
+              className="hidden md:block uppercase cursor-pointer font-medium pr-2"
+            >
+              menu
+            </Typography>
+            <div className="block hover:opacity-80 cursor-pointer z-50">
+              {navigation ? <CloseIcon /> : <MenuIcon />}
+            </div>
           </div>
         </div>
       </div>

@@ -31,49 +31,78 @@ export const navLinks: NavLink[] = [
 export const experienceData: Experience[] = [
   {
     id: 1,
-    company: "BOOSTECH DIGITAL TRANSFORMATION PLATFORM COMPANY LIMITED",
-    duration: "07/2024 - 10/2024",
-    role: "Full-stack Developer",
-    address: "No. 27 Street 8, Binh Chanh District, Ho Chi Minh city, Vietnam.",
-    describe:
-      "Cooperate with other developers, testers to develop company application. Using technologies: Spring Boot, Next.js, React.js, Material UI, Flutter, RESTful APIs.",
+    company: "CIGRO VIETNAM CO., LTD",
+    duration: "05/2025 - Present",
+    role: "Bubble Developer",
+    address:
+      "67-69 Vo Nguyen Giap, Thao Dien, Thu Duc city, Ho Chi Minh city, Vietnam.",
+    describe: "",
     contributions: [
-      { id: 1, describe: "Design, analyze databases and processing flows." },
+      {
+        id: 1,
+        describe:
+          "Collaborate with cross-functional teams to understand project requirements, and translate them into efficient and scalable no-code solutions.",
+      },
       {
         id: 2,
         describe:
-          "Design the APIs for the Management Warehouse Application by using Spring Boot and consume them on website and mobile application by using Next.js and Flutter",
-      },
-      {
-        id: 3,
-        describe:
-          "List test cases and check them before the tester implements their role. If they find errors, resolve them as soon as possible",
+          "Troubleshoot and debug issues, propose and implement solutions, and ensure smooth and uninterrupted system operations.",
       },
     ],
     deployed_link: "",
   },
   {
     id: 2,
+    company: "BOOSTECH DIGITAL TRANSFORMATION PLATFORM COMPANY LIMITED",
+    duration: "07/2024 - 10/2024",
+    role: "Full-stack Developer",
+    address: "No. 27 Street 8, Binh Chanh District, Ho Chi Minh city, Vietnam.",
+    describe:
+      "Developed the Management Warehouse Application using Java Spring Boot, PostgreSQL, Next.js, React.js, Material UI, Flutter, and RESTful APIs, collaborating with developers and testers.",
+    contributions: [
+      { id: 1, describe: "Design, analyze databases and processing flows." },
+      {
+        id: 2,
+        describe: "Design and optimize the APIs",
+      },
+      {
+        id: 3,
+        describe: "Building UI components from Figma designs.",
+      },
+      {
+        id: 4,
+        describe: "Built the admin dashboard interfaces.",
+      },
+      {
+        id: 5,
+        describe:
+          "Created and executed test cases, resolving identified issues.",
+      },
+    ],
+    deployed_link: "",
+  },
+  {
+    id: 3,
     company: "TURBO TECHNOLOGY SOLUTION JOINT STOCK COMPANY",
     duration: "04/2024 - 07/2024",
-    role: "Frontend Developement Intern",
+    role: "Internship Frontend Developer",
     address:
       "No. 10 Pho Quang Street, Tan Binh Ward, Ho Chi Minh city, Vietnam",
     describe:
-      "Cooperate with backend team to improve company websites. Using technologies: Next.js, React.js, Material UI, RESTful APIs",
+      "Collaborated with the backend team to enhance company websites using Next.js, React.js, Material UI, and RESTful APIs.",
     contributions: [
       {
         id: 1,
         describe:
-          "Design new website interfaces and admin dashboard by using Next.js, RESTful API, Material UI for improving the UI/UX.",
+          "Designed and developed improved UI/UX for the company website interfaces and admin dashboards using Next.js, RESTful APIs, and Material UI.",
       },
       {
         id: 2,
         describe:
-          "Support sales team to design the demo versions for customers.",
+          "Supported the sales team by designing customer demo versions.",
       },
     ],
-    deployed_link: "https://ecocloudvn.vercel.app",
+    deployed_link: "",
   },
 ];
 

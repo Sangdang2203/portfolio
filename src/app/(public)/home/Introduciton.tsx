@@ -7,10 +7,10 @@ import AvatarComponent from "@/components/Avatar";
 
 export default function IntroComponent() {
   const [showSummary, setShowSummary] = React.useState(false);
-  const [hidden, setHidden] = React.useState(false);
-  const toggleSummary = () => {
+  const [show, setShow] = React.useState(false);
+  const toggleClick = () => {
     setShowSummary(!showSummary);
-    setHidden(!hidden);
+    setShow(!show);
   };
   return (
     <>
@@ -26,19 +26,19 @@ export default function IntroComponent() {
           <p className="capitalize mx-3 text-lg md:text-2xl">(Jonathan)</p>
         </div>
         <Typography className="text-sm md:text-lg">
-          I&apos;m a full-stack developer.
+          I&apos;m a software developer.
         </Typography>
 
-        {!hidden && (
+        {!show && (
           <button
-            onClick={toggleSummary}
+            onClick={toggleClick}
             className="my-10 relative inline-flex h-12 active:scale-95 transistion overflow-hidden rounded-lg p-[1px] focus:outline-none"
           >
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
             <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2 undefined">
               <div className="flex items-center">
                 <IconInfo />
-                <Typography className="ml-1 uppercase">about me</Typography>
+                <Typography className="pl-2 uppercase">about me</Typography>
               </div>
             </span>
           </button>

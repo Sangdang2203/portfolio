@@ -2,13 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
-import { projectData } from "@/data";
-import {
-  CalendarMonth,
-  Check,
-  GitHub,
-  LanguageRounded,
-} from "@mui/icons-material";
+import { projectData } from "@/app/libs/data";
+import { CalendarMonth, Check, LanguageRounded } from "@mui/icons-material";
 import { Typography } from "@mui/material";
 import CarouselComponent from "@/components/Carousel";
 
@@ -17,7 +12,7 @@ export default function ProjectComponent() {
   return (
     <>
       <button className="button z-0" data-text="Project">
-        <span className="">&nbsp;projects&nbsp;</span>
+        <span className="text-green-700 font-bold">&nbsp;projects&nbsp;</span>
       </button>
 
       <div className="m-3 md:mx-10">
@@ -30,29 +25,6 @@ export default function ProjectComponent() {
                 <p className="text-sm md:text-lg">{item.duration}</p>
               </div>
 
-              <div className="flex my-2 items-start">
-                {item.githubLinks.length > 0 ? (
-                  <GitHub fontSize="small" className="mr-2" />
-                ) : (
-                  ""
-                )}
-                <div>
-                  {item.githubLinks.length > 0 &&
-                    item.githubLinks.map((link) => {
-                      return (
-                        <div key={link.id}>
-                          <Link
-                            href={link.link}
-                            className="text-sm md:text-lg"
-                            target="_blank"
-                          >
-                            {link.name + ": " + link.link}
-                          </Link>
-                        </div>
-                      );
-                    })}
-                </div>
-              </div>
               {item.deployedLinks.length > 0 ? (
                 <div className="flex my-2 items-start">
                   <LanguageRounded fontSize="small" className="mr-2" />
@@ -88,7 +60,7 @@ export default function ProjectComponent() {
               })}
               <div>
                 <Typography className="mt-2" variant="h6">
-                  Contributions:
+                  Key Features:
                 </Typography>
                 <p className="text-sm md:text-lg">{item.contributions}</p>
               </div>

@@ -22,7 +22,6 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/app/ui": ["./src/app/ui/*"],
-      "@/data": ["./src/app/lib/data"],
       "@/icons": ["./src/assets/icons/*"],
       "@/images": ["./src/assets/images/*"],
       "@/components": ["./src/components/*"],
