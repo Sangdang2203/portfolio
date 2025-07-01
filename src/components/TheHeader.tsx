@@ -35,8 +35,8 @@ export default function HeaderComponent() {
   };
 
   return (
-    <nav className="w-full h-[80px] px-3 md:px-[64px] z-50 shadow-lg">
-      <div className="flex justify-between items-center">
+    <nav className="w-full max-h-[80px] px-3 md:px-[64px] z-50 shadow-lg">
+      <div className="flex justify-between items-center w-full max-h-[80px]">
         <Button className="text-2xl button">
           <span className="text-3xl">&nbsp;portfolio&nbsp;</span>
           <span aria-hidden="true" className="hover-text">
