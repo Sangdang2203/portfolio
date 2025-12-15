@@ -30,9 +30,20 @@ export const navLinks: NavLink[] = [
 
 export const experienceData: Experience[] = [
   {
-    id: 1,
+    id: 4,
+    company: "NASYS COMPANY LIMITED",
+    duration: "07/2025 - Present",
+    role: "Frontend Developer",
+    address: "102 Nguyen Xi, Binh Thanh district, Ho Chi Minh city, Vietnam.",
+    describe:
+      "NASYS Software Company Limited is a wholly owned subsidiary of Elisoft. We specialize in providing software technology solutions to customers. With more than 10 years of development, NASYS meets all the needs of customers from individuals to small and medium enterprises. NASYS software spreads and covers almost all different fields and industries, typically ERP business management software, sales management software for F&B and retail, billiards management software,...",
+    contributions: [],
+    deployed_link: "",
+  },
+  {
+    id: 3,
     company: "CIGRO VIETNAM CO., LTD",
-    duration: "05/2025 - Present",
+    duration: "05/2025 - 6/2025",
     role: "Bubble Developer",
     address:
       "67-69 Vo Nguyen Giap, Thao Dien, Thu Duc city, Ho Chi Minh city, Vietnam.",
@@ -82,7 +93,7 @@ export const experienceData: Experience[] = [
     deployed_link: "",
   },
   {
-    id: 3,
+    id: 1,
     company: "TURBO TECHNOLOGY SOLUTION JOINT STOCK COMPANY",
     duration: "04/2024 - 07/2024",
     role: "Internship Frontend Developer",

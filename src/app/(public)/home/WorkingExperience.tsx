@@ -23,7 +23,7 @@ export default function WorkingExperienceComponent() {
         <span className="text-green-700 font-bold">&nbsp;experience&nbsp;</span>
       </button>
 
-      {experienceData.slice(currentIndex, currentIndex + 1).map((item) => {
+      {experienceData.slice(currentIndex, currentIndex + 1).reverse().map((item) => {
         return (
           <div key={id + item.company} className="m-3 md:mx-10">
             <div className="flex items-start mt-3">
@@ -59,7 +59,7 @@ export default function WorkingExperienceComponent() {
               <p className="text-sm md:text-lg mx-2">{item.address}</p>
             </div>
             <p className="text-sm md:text-lg">{item.describe}</p>
-            <Typography className="mt-2" variant="h6">
+            <Typography className={`${item.contributions.length > 0 ? 'block' : 'hidden'}`} variant="h6">
               Personal contributions:
             </Typography>
             {item.contributions.map((contribution, index) => {
